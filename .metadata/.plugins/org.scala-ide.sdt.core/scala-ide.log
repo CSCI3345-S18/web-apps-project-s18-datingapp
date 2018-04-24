@@ -1,0 +1,2 @@
+2018-04-12 12:24:04,687  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for Meowder, setting default to 2.12.
+2018-04-12 12:24:04,701  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for Meowder, setting default to 2.12.
