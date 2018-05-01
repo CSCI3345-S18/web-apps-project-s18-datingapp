@@ -1,0 +1,51 @@
+@* almostDone Template File *@
+@()(implicit request: RequestHeader)
+
+<head>
+	<div class="indentation">
+	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/datingsite.css")">
+	<title>Free Online Dating</title>
+	</div>
+</head>
+
+@main("Almost Done") {
+<div class="indentation">
+<h2>You're Almost There!</h2>
+<br><br>
+<b>FIRST NAME</b>
+<form>
+<input type="text" name="fname" placeholder="First Name">
+</form>
+<br>
+<b>BIRTHDATE</b> <br>
+<select>
+    <option value="" disabled selected>Month</option>
+    <option value="jan">January</option>
+    <option value="feb">February</option>
+    <option value="mar">March</option>
+    <option value="apr">April</option>
+    <option value="may">May</option>
+    <option value="jun">June</option>
+    <option value="jul">July</option>
+    <option value="aug">August</option>
+    <option value="sept">September</option>
+    <option value="oct">October</option>
+    <option value="nov">November</option>
+    <option value="dec">December</option>
+</select>
+<select>
+    <option value="" disabled selected>Day</option>
+</select>
+<select>
+    <option value="" disabled selected>Year</option>
+</select><br><br>
+<button type="button">Continue</button>
+</div>
+<div class="existingaccount">
+<p>Have an account?</p>
+<button type="button" class="signin">Sign In</button>
+</div>
+</body>
+</html>
+	
+}

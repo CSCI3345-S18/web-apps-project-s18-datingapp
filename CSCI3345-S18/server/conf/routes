@@ -65,3 +65,11 @@ GET		/spa/button2				controllers.SinglePageApp.button2Call
 POST	/spa/setCircle				controllers.SinglePageApp.setCircle
 
 GET		/jscanvas					controllers.SinglePageApp.jscanvas
+
+######### Meowder Routes #########################################
+
+GET		/meowder					controllers.MeowderController.datingSite
+
+GET		/almostDone					controllers.MeowderController.almostDone
+
+GET		/createAccount				controllers.MeowderController.createAccount
