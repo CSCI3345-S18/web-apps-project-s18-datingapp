@@ -16,4 +16,12 @@ class MeowderController @Inject() (cc: ControllerComponents) extends AbstractCon
   def datingSite = Action { implicit request =>
     Ok(views.html.datingApp())
   }
+  
+  def almostDone = Action { implicit request =>
+    Ok(views.html.almostDone())
+  }
+  
+  def createAccount = Action { implicit request =>
+    Ok(views.html.createAccount())
+  }
 }

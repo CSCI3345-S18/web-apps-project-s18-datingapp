@@ -69,3 +69,7 @@ GET		/jscanvas					controllers.SinglePageApp.jscanvas
 ######### Meowder Routes #########################################
 
 GET		/meowder					controllers.MeowderController.datingSite
+
+GET		/almostDone					controllers.MeowderController.almostDone
+
+GET		/createAccount				controllers.MeowderController.createAccount

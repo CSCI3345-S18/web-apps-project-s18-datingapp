@@ -1,0 +1,25 @@
+@* createAccount Template File *@
+@()(implicit request: RequestHeader)
+
+<head>
+	<title>Create Account</title>
+	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/createAccount.css")">
+</head>
+
+@main("Create Account") {
+<h1>Last Step!</h1>
+<br><br>
+<b>EMAIL</b>
+<form>
+<input type="text" name="email" placeholder="Email">
+</form>
+<br>
+<b>PASSWORD</b>
+<form>
+<input type="text" name="password" placeholder="Password">
+</form>
+<br><br>
+<p>Have an account?</p>
+<button type="button">Sign In</button>
+	
+}
