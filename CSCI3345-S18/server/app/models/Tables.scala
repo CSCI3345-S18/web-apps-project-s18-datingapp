@@ -17,10 +17,10 @@ object Tables {
     def password = column[String]("password")
     def sexuality = column[String]("sexuality")
     def gender = column[String]("gender")
-    def isMatched = column[Boolean]("isMatched")
     def catFact = column[String]("catFact")
-    def * = (username, password, sexuality, gender, isMatched, catFact) <> (User.tupled, User.unapply)
+    def * = (username, password, sexuality, gender, catFact) <> (User.tupled, User.unapply)
   }
+  val users = TableQuery[Users]
   
   class Cats(tag:Tag) extends Table[Cat](tag, "cat"){
     def catname = column[String]("catname")
@@ -29,4 +29,16 @@ object Tables {
     def gender = column[String]("gender")
     def * = (catname, ownername, breed, gender) <> (Cat.tupled, Cat.unapply)
   }
+  val cats = TableQuery[Cats]
+  
+  //status works in the following way....
+  //0: user1 liked user2, but user2 hasn't liked user 1 yet :(
+  //1: user2 also liked user1. Yay!
+  class Matches(tag:Tag) extends Table[Matched](tag, "matched"){
+    def userone = column[String]("userone")
+    def usertwo = column[String]("usertwo")
+    def status = column[Int]("status")
+    def * = (userone, usertwo, status) <> (Matched.tupled, Matched.unapply)
+  }
+  val matches = TableQuery[Matches]
 }
