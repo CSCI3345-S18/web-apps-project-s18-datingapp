@@ -6,7 +6,7 @@ import scala.concurrent.Future
 import controllers.NewUser
 import controllers.NewCat
 
-case class User(username: String, password:String, sexuality:String, gender:String, catFact:String)
+case class User(username: String, email:String, password:String, sexuality:String, gender:String, catFact:String)
 case class Cat(catname:String, ownername:String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
 
@@ -28,7 +28,7 @@ object MeowderQueries {
   //Needs to add NewUser & NewCat in a controller
   def addUser(nu: NewUser, db: Database)(implicit ec: ExecutionContext): Future[Int] = {
     db.run {
-      users += User(nu.username, nu.password, nu.sexuality, nu.gender, nu.catFact)
+      users += User(nu.username, nu.email, nu.password, null, null, null)
     }
   }
   

@@ -14,11 +14,12 @@ object Tables {
   
   class Users(tag:Tag) extends Table[User](tag, "user"){
     def username = column[String]("username")
+    def email = column[String]("email")
     def password = column[String]("password")
     def sexuality = column[String]("sexuality")
     def gender = column[String]("gender")
     def catFact = column[String]("catFact")
-    def * = (username, password, sexuality, gender, catFact) <> (User.tupled, User.unapply)
+    def * = (username, email, password, sexuality, gender, catFact) <> (User.tupled, User.unapply)
   }
   val users = TableQuery[Users]
   
