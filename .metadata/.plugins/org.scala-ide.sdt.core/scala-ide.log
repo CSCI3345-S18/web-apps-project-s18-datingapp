@@ -1,0 +1,9 @@
+2018-05-03 15:51:58,154 ERROR [ModalContext] - System.err - Unable to construct FQN from 'controllers.MewoderChatController'
+2018-05-03 15:51:59,422  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-03 15:52:37,370  WARN [Worker-6] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-03 15:52:37,371  WARN [Worker-6] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-03 15:52:37,377  WARN [Worker-6] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-03 15:52:37,377  WARN [Worker-6] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-03 15:52:38,175  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-03 16:02:14,390  WARN [scala-execution-context-global-434] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-03 16:02:14,390  WARN [scala-execution-context-global-434] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.

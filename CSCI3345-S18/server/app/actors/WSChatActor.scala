@@ -6,7 +6,7 @@ import akka.actor.ActorRef
 
 class WSChatActor(out: ActorRef, manager: ActorRef) extends Actor {
   
-  out ! "We are connected!"
+  out ! "Chatting with your match"
   manager ! WSChatManager.NewChatter(self)
   
   import WSChatActor._

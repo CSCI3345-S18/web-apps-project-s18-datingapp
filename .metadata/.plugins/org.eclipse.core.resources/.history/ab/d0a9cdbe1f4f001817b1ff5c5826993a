@@ -1,0 +1,79 @@
+body {
+    background-color: #b981d1;
+}
+
+#logo {
+    margin-top: 45px; 
+    margin-left: 60px; 
+    font-size: 30px; 
+    color: #b981d1; 
+    font-style: italic;
+    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+}
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+	background: #69ecc2;
+	border-radius: 6px;
+}
+
+.chat {
+	width: 490px;
+	float: left;
+	background: #e1e5ea;
+}
+
+
+
+.chat-list {
+  width:260px;
+  float: left;
+  overflow-y: auto; 
+  max-height: 532px;
+  .search {
+    padding: 20px;
+  }
+  
+  input {
+    border-radius: 3px;
+    border: none;
+    padding: 14px;
+    color: white;
+    background: #6A6C75;
+    width: 90%;
+    font-size: 14px;
+  }
+  
+  .fa-search {
+    position: relative;
+    left: -25px;
+  }
+  
+  ul {
+    padding: 20px;
+    height: 500px;
+    
+    li {
+      padding-bottom: 20px;
+    }
+  }
+  
+  img {
+    float: left;
+  }
+  
+  .about {
+    float: left;
+    margin-top: 8px;
+  }
+  
+  .about {
+    padding-left: 8px;
+  }
+  
+  .status {
+    color: $gray;
+  }
+  
+}

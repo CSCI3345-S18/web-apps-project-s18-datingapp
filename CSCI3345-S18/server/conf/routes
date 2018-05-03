@@ -73,3 +73,7 @@ GET		/meowder					controllers.MeowderController.datingSite
 GET		/almostDone					controllers.MeowderController.almostDone
 
 GET		/createAccount				controllers.MeowderController.createAccount
+
+GET		/chat						controllers.MeowderChatController.index
+GET		/chatsocket					controllers.MeowderChatController.socket
+
