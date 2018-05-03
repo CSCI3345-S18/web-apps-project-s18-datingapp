@@ -64,6 +64,10 @@ class MeowderController @Inject() (
     Ok(views.html.createAccount())
   }
   
+  def userProfile = Action { implicit request =>
+    Ok(views.html.profile())
+  }
+  
   def addUser = Action.async { implicit request =>
     newUserForm.bindFromRequest().fold(
       formWithErrors => {
