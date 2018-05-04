@@ -23,10 +23,12 @@ import play.api.data.Form
 import play.api.data.Forms.mapping
 import play.api.data.Forms._
 import scala.concurrent.Future
+import Console._
 
 //case class NewUser(username: String, password:String, sexuality:String, gender:String, catFact:String)
 case class NewUser(username: String, email: String, password:String)
 case class NewCat(catname:String, ownername:String, breed:String, gender:String)
+case class Login(email:String, password:String)
 
 @Singleton
 class MeowderController @Inject() (
@@ -43,14 +45,19 @@ class MeowderController @Inject() (
     
   val newUserForm = Form(mapping(
     "username" -> nonEmptyText,
-    "password" -> nonEmptyText,
-    "email" -> nonEmptyText)(NewUser.apply)(NewUser.unapply))
+    "email" -> nonEmptyText,
+    "password" -> nonEmptyText)(NewUser.apply)(NewUser.unapply))
     
   val newCatForm = Form(mapping(
     "catname" -> nonEmptyText,
     "ownername" -> nonEmptyText,
     "breed" -> nonEmptyText,
     "gender" -> nonEmptyText)(NewCat.apply)(NewCat.unapply))
+    
+  val loginForm = Form(mapping(
+    "email" -> nonEmptyText,
+    "password" -> nonEmptyText,
+    )(Login.apply)(Login.unapply))
   
   def datingSite = Action { implicit request =>
     Ok(views.html.datingApp())
@@ -61,20 +68,29 @@ class MeowderController @Inject() (
   }
   
   def createAccount = Action { implicit request =>
-    Ok(views.html.createAccount())
+    Ok(views.html.createAccount("", newUserForm))
   }
   
   def userProfile = Action { implicit request =>
     Ok(views.html.profile())
   }
   
+  def login = Action { implicit request =>
+    Console.println("Sign in button clicked")
+    Ok(views.html.meowderLogin((loginForm)))
+  }
+  
+  //[TODO] Need to edit almostDone so it'll keep FirstName and transfer it to createAccount Pagr
   def addUser = Action.async { implicit request =>
+    Console.println("inside addUser")
     newUserForm.bindFromRequest().fold(
       formWithErrors => {
-        val Future = MeowderQueries.allBooks(db)
-        Future.map(books => BadRequest(views.html.createAccount()))
+        Console.println("sooo am i here")
+        val Future = MeowderQueries.allUsers(db)
+        Future.map(books => BadRequest(views.html.createAccount("", newUserForm)))
       },
       newUser => {
+        Console.println("Right after new user")
         val addFuture = MeowderQueries.addUser(newUser, db)
         addFuture.map { cnt =>
           if(cnt == 1) Redirect(routes.MeowderController.createAccount).flashing("message" -> "Your account has been created!")
@@ -83,26 +99,43 @@ class MeowderController @Inject() (
       })
   }
   
-  //Need to add arguments in datingApp.scala.html
-  def login = Action.async { implicit request =>
+  def verify = Action.async { implicit request =>
     Console.println("inside login")
-    newUserForm.bindFromRequest().fold(
+    loginForm.bindFromRequest().fold(
       formWithErrors => {
-        val usersFuture = MeowderQueries.allBooks(db)
-        usersFuture.map(users => BadRequest(views.html.datingApp(/*newUserForm*/)))
+        val usersFuture = MeowderQueries.allUsers(db)
+        usersFuture.map(users => BadRequest(views.html.meowderLogin(loginForm)))
       },
       newUser => {
-        val verifyFuture = MeowderQueries.login(newUser.email, newUser.password, db)
+        val verifyFuture = MeowderQueries.verify(newUser.email, newUser.password, db)
         verifyFuture.flatMap { user =>
           if(user.nonEmpty == true){
            //[TODO]Change here after the profile page is created!!
-           val tasksFuture = MeowderQueries.allBooks(db)
-           tasksFuture.map(tasks => Ok(views.html.datingApp()))
+           val usersFuture = MeowderQueries.findUserByEmail(newUser.email, db)
+           usersFuture.map(users => Ok(views.html.profile()))
           }else{
-          val Future = MeowderQueries.allBooks(db)
+          val Future = MeowderQueries.allUsers(db)
           Future.map(books => BadRequest(views.html.datingApp()))
           }
         }
       })
    }
+  
+  def ageCheck = Action.async { implicit request =>
+    Console.println("inside addUser")
+    newUserForm.bindFromRequest().fold(
+      formWithErrors => {
+        Console.println("sooo am i here")
+        val Future = MeowderQueries.allUsers(db)
+        Future.map(books => BadRequest(views.html.createAccount("", newUserForm)))
+      },
+      newUser => {
+        Console.println("Right after new user")
+        val addFuture = MeowderQueries.addUser(newUser, db)
+        addFuture.map { cnt =>
+          if(cnt == 1) Redirect(routes.MeowderController.createAccount).flashing("message" -> "Your account has been created!")
+          else Redirect(routes.MeowderController.createAccount).flashing("error" -> "Failed to creat your account...")
+        }
+      })
+  }
 }

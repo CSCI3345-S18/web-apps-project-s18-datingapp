@@ -6,7 +6,7 @@ import scala.concurrent.Future
 import controllers.NewUser
 import controllers.NewCat
 
-case class User(username: String, email:String, password:String, sexuality:String, gender:String, catFact:String)
+case class User(username: String, email:String, password:String, sexuality:Option[String], gender:Option[String], catFact:Option[String])
 case class Cat(catname:String, ownername:String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
 
@@ -15,13 +15,14 @@ case class Matched(userone:String, usertwo:String, status:Int)
  */
 object MeowderQueries {
   import Tables._
-  def allBooks(db: Database)(implicit ec: ExecutionContext):Future[Seq[Book]] = {
-    db.run(books.result)
+  
+  def allUsers(db: Database)(implicit ec: ExecutionContext):Future[Seq[User]] = {
+    db.run(users.result)
   }
   
-  def findByISBN(isbn: String, db: Database)(implicit ec: ExecutionContext): Future[Option[Book]] = {
+  def findUserByEmail(email: String, db: Database)(implicit ec: ExecutionContext): Future[Option[User]] = {
     db.run {
-      books.filter(_.isbn === isbn).result.headOption
+      users.filter(_.email === email).result.headOption
     }
   }
   
@@ -70,9 +71,9 @@ object MeowderQueries {
     }
   }
   
-  def login(username: String, password: String, db: Database)(implicit ex:ExecutionContext):Future[Option[User]] = {
+  def verify(email: String, password: String, db: Database)(implicit ex:ExecutionContext):Future[Option[User]] = {
     db.run{
-      users.filter(u => u.username === username && u.password === password).result.headOption
+      users.filter(u => u.email === email && u.password === password).result.headOption
     }
   }
 }

@@ -76,6 +76,12 @@ GET		/createAccount				controllers.MeowderController.createAccount
 
 GET		/userProfile				controllers.MeowderController.userProfile
 
+GET		/login						controllers.MeowderController.login
+
+POST	/userProfile				controllers.MeowderController.verify
+
+POST	/createAccount				controllers.MeowderController.addUser
+
 GET		/chat						controllers.MeowderChatController.index
 GET		/chatsocket					controllers.MeowderChatController.socket
 

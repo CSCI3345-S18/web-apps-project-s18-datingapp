@@ -16,9 +16,9 @@ object Tables {
     def username = column[String]("username")
     def email = column[String]("email")
     def password = column[String]("password")
-    def sexuality = column[String]("sexuality")
-    def gender = column[String]("gender")
-    def catFact = column[String]("catFact")
+    def sexuality = column[Option[String]]("sexuality")
+    def gender = column[Option[String]]("gender")
+    def catFact = column[Option[String]]("catFact")
     def * = (username, email, password, sexuality, gender, catFact) <> (User.tupled, User.unapply)
   }
   val users = TableQuery[Users]
