@@ -1,4 +1,4 @@
-package controllers
+/*package controllers
 
 import javax.inject._
 import play.api.mvc._
@@ -38,4 +38,4 @@ class DatingAppController @Inject() (
     "gender" -> nonEmptyText)(NewCat.apply)(NewCat.unapply))
 
   
-}
+}*/
