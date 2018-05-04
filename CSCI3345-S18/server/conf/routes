@@ -82,6 +82,8 @@ POST	/userProfile				controllers.MeowderController.verify
 
 POST	/createAccount				controllers.MeowderController.addUser
 
+POST	/almostDone					controllers.MeowderController.ageCheck
+
 GET		/chat						controllers.MeowderChatController.index
 GET		/chatsocket					controllers.MeowderChatController.socket
 

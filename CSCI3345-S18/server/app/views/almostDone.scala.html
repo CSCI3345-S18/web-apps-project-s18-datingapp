@@ -1,5 +1,5 @@
 @* almostDone Template File *@
-@()(implicit request: RequestHeader)
+@(ageForm:Form[AgeCheck])(implicit request: MessagesRequestHeader, flash:Flash)
 
 <head>
 	<div class="indentation">
@@ -12,6 +12,15 @@
 <div class="indentation">
 <h2>You're Almost There!</h2>
 <br><br>
+@helper.form(action = helper.CSRF(routes.MeowderController.ageCheck)) {
+	  @helper.inputText(ageForm("firstname"))
+	  <b>BIRTHDATE</b>
+	  @helper.inputText(ageForm("month"))
+	  @helper.inputText(ageForm("day"))
+	  @helper.inputText(ageForm("year"))
+	  	 <input type="submit" value="Submit">
+}
+
 <b>FIRST NAME</b>
 <form>
 <input type="text" name="fname" placeholder="First Name">
