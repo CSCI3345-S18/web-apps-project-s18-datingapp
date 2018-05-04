@@ -1,5 +1,5 @@
 @* profile Template File *@
-@()(implicit request: RequestHeader)
+@(username: String, factForm: Form[Profile]])(implicit request: RequestHeader)
 
 
 <head>
@@ -7,20 +7,25 @@
 <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/profile.css")">
 </head>
 
-@main("Profile Page"){
+<body>
 <h1 id="logo">Meowder</h1>
 <div class="existingaccount">
 Have an account?
 <button type="button" class="signin">Sign In</button> 
 </div>
 <div class="indentation">
-<img src="@routes.Assets.versioned("images/emilyCat.jpg")" width="13%">
+<img src="@routes.Assets.versioned("images/profilepic.jpg")" width="13%">
 <h2 id="name">Sarah Z.</h2>
 <button type="button" id="message">Message Her</button><br>
-<button type="button" id="buycatfood" onclick="location.href='https://www.amazon.com/Purina-Fancy-Feast-Seafood-Collection/dp/B01NAXAVAK/ref=sr_1_2_sspa?s=pet-supplies&ie=UTF8&qid=1522899040&sr=1-2-spons&keywords=cat+food&psc=1';">Buy Her Cat Food</button>
 <div id="catfacts">
 <br><br>
 <h2>CAT FACT: A cat usually has about 12 whiskers on each side of its face.</h2>
+@main("Add Cat Fact") {
+	@helper.form(action = helper.CSRF(routes.MeowderController.editCatFact)) {
+		@helper.inputText(factForm(("catFact"))
+	}
+}
+
 </div>
 <div id="sarahBio">
 <h2 id="About">About</h2>
@@ -28,6 +33,6 @@ Have an account?
 <p id="cattalk">Ah, whooo! I promised myself I wouldn’t cry. So anyway I am a cat lover. And I love to run. I’m sorry I’m thinking about cats again. I just – I think about how many don’t have a home and how I should have them and how cute they are and how their ears and the whiskers and the nose, I just love them and I want them and I want them basket. And I want little bow ties. I want them to be on a rainbow and just in my bed, and I just want a house full of them and I just want us to roll around – I can’t I can’t.</p>
 </div>
 </div>
+</body>
 
-}
 

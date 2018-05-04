@@ -43,7 +43,7 @@ class MeowderController @Inject() (
 //    "sexuality" -> nonEmptyText,
 //    "gender" -> nonEmptyText,
 //    "catFact" -> nonEmptyText)(NewUser.apply)(NewUser.unapply))
-    
+ 
   val newUserForm = Form(mapping(
     "username" -> nonEmptyText,
     "email" -> nonEmptyText,
