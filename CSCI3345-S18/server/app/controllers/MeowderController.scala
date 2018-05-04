@@ -30,6 +30,8 @@ case class NewUser(username: String, email: String, password:String)
 case class NewCat(catname:String, ownername:String, breed:String, gender:String)
 case class Login(email:String, password:String)
 case class AgeCheck(firstname: String, month: Int, day:Int, year:Int)
+case class Profile(username: String, gender: String, sexuality: String, catFact: String)
+
 
 @Singleton
 class MeowderController @Inject() (
@@ -67,6 +69,12 @@ class MeowderController @Inject() (
         "year" -> number(max = 1999)
     )(AgeCheck.apply)(AgeCheck.unapply))
     
+   val profileForm = Form(mapping(
+      "username" -> nonEmptyText,
+      "gender" -> nonEmptyText,
+      "sexuality" -> nonEmptyText,
+      "catFact" -> nonEmptyText)(Profile.apply)(Profile.unapply))
+      
   
   def datingSite = Action { implicit request =>
     Ok(views.html.datingApp())
@@ -78,10 +86,6 @@ class MeowderController @Inject() (
   
   def createAccount = Action { implicit request =>
     Ok(views.html.createAccount("", newUserForm))
-  }
-  
-  def userProfile = Action { implicit request =>
-    Ok(views.html.profile())
   }
   
   def login = Action { implicit request =>
@@ -108,7 +112,7 @@ class MeowderController @Inject() (
       })
   }
   
-  def verify = Action.async { implicit request =>
+  def verify() = Action.async { implicit request =>
     Console.println("inside login")
     loginForm.bindFromRequest().fold(
       formWithErrors => {
@@ -121,7 +125,7 @@ class MeowderController @Inject() (
           if(user.nonEmpty == true){
            //[TODO]Change here after the profile page is created!!
            val usersFuture = MeowderQueries.findUserByEmail(newUser.email, db)
-           usersFuture.map(users => Ok(views.html.profile()))
+           usersFuture.map(users => Ok(views.html.profile(newUser.email, profileForm)))
           }else{
           val Future = MeowderQueries.allUsers(db)
           Future.map(books => BadRequest(views.html.datingApp()))

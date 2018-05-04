@@ -1,6 +1,5 @@
 @* profile Template File *@
-@(username: String, factForm: Form[Profile]])(implicit request: RequestHeader)
-
+@(username: String, factForm: Form[Profile])(implicit request: RequestHeader)
 
 <head>
 <title>Sarah Z.</title>
@@ -20,12 +19,12 @@ Have an account?
 <div id="catfacts">
 <br><br>
 <h2>CAT FACT: A cat usually has about 12 whiskers on each side of its face.</h2>
-@main("Add Cat Fact") {
-	@helper.form(action = helper.CSRF(routes.MeowderController.editCatFact)) {
-		@helper.inputText(factForm(("catFact"))
-	}
+@main("User Profile") {
+	@helper.form(action = helper.CSRF(routes.UsersMatchedController.addFact())) {
+	  @helper.inputText(taskForm("item"))
+	  <input type="submit" name="loginSubmission" value="Add Task">
+	}	
 }
-
 </div>
 <div id="sarahBio">
 <h2 id="About">About</h2>

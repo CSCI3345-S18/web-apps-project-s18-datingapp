@@ -74,8 +74,6 @@ GET		/almostDone					controllers.MeowderController.almostDone
 
 GET		/createAccount				controllers.MeowderController.createAccount
 
-GET		/userProfile				controllers.MeowderController.userProfile
-
 GET		/login						controllers.MeowderController.login
 
 POST	/userProfile				controllers.MeowderController.verify

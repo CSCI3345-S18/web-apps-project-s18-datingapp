@@ -26,19 +26,13 @@ import scala.concurrent.Future
 import Console._
 import models.MeowderQueries
 
-case class Profile(username: String, gender: String, sexuality: String, catFact: String)
-
+@Singleton
 class UsersMatchedController @Inject() (
   protected val dbConfigProvider: DatabaseConfigProvider,
   mcc: MessagesControllerComponents)(implicit ec: ExecutionContext)
   extends MessagesAbstractController(mcc) with HasDatabaseConfigProvider[JdbcProfile] {
   
-  val profileForm = Form(mapping(
-      "username" -> nonEmptyText,
-      "gender" -> nonEmptyText,
-      "sexuality" -> nonEmptyText,
-      "catFact" -> nonEmptyText)(Profile.apply)(Profile.unapply))
-      
+ 
     /*def viewFeed(currUser: String) = Action.async { implicit request =>
       val feedFuture = MeowderQueries.allCatFacts(currUser, db) 
       feedFuture.map(feed => Ok(views.html.catFeed(currUser, feed, db))
