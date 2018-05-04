@@ -1,0 +1,32 @@
+@* catFeed Template File *@
+@*@()(implicit request: RequestHeader)
+
+<head>
+<title>Feed</title>
+<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/catFeed.css")">
+</head>
+
+<h1>Cat Facts Feed</h1>
+<br>
+<h3>Approximately 40,000 people are bitten by cats in the U.S. annually.</h3>
+@helper.form(action = helper.CSRF(routes.UsersMatchedController.likeFact())) {
+				<input type="submit" name="likeMe" value="Like">
+			}
+<br>
+<h3>The term “puss” is the root of the principal word for “cat” in the Romanian term pisica and the root of secondary words in Lithuanian (puz) and Low German puus. Some scholars suggest that “puss” could be imitative of the hissing sound used to get a cat’s attention. As a slang word for the female pudenda, it could be associated with the connotation of a cat being soft, warm, and fuzzy.</h3>
+<button type="button">Like</button><br>
+<h3>Cats are North America’s most popular pets: there are 73 million cats compared to 63 million dogs. Over 30% of households in North America own a cat.</h3><button type="button">Like</button>
+<br>
+<h3>A cat rubs against people not only to be affectionate but also to mark out its territory with scent glands around its face. The tail area and paws also carry the cat’s scent.</h3>
+<button type="button">Like</button><br>
+<h3>A cat can travel at a top speed of approximately 31 mph (49 km) over a short distance.</h3>
+<button type="button">Like</button><br>
+<h3>When a family cat died in ancient Egypt, family members would mourn by shaving off their eyebrows. They also held elaborate funerals during which they drank wine and beat their breasts. The cat was embalmed with a sculpted wooden mask and the tiny mummy was placed in the family tomb or in a pet cemetery with tiny mummies of mice.</h3>
+<button type="button">Like</button><br>
+<h3>Smuggling a cat out of ancient Egypt was punishable by death. Phoenician traders eventually succeeded in smuggling felines, which they sold to rich people in Athens and other important cities.</h3>
+<button type="button">Like</button><br>
+<h3>A cat’s brain is biologically more similar to a human brain than it is to a dog’s. Both humans and cats have identical regions in their brains that are responsible for emotions.</h3>
+<button type="button">Like</button><br>
+<h3>A cat usually has about 12 whiskers on each side of its face.</h3>
+<button type="button" onclick="location.href='profile.html';">Like</button><br>
+*@

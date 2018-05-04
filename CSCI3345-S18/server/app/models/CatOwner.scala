@@ -76,4 +76,10 @@ object MeowderQueries {
       users.filter(u => u.email === email && u.password === password).result.headOption
     }
   }
+  
+  /*def addCatFact(username: String, catFact: CatFact, db: Database)(implicit ex: ExecutionContext): Future[Option[User]] = {
+    db.run {
+      users += User()
+    }
+  }*/
 }
