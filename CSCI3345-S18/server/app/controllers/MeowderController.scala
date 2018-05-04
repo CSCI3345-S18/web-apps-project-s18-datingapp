@@ -30,7 +30,6 @@ case class NewUser(username: String, email: String, password:String)
 case class NewCat(catname:String, ownername:String, breed:String, gender:String)
 case class Login(email:String, password:String)
 case class AgeCheck(firstname: String, month: Int, day:Int, year:Int)
-case class Profile(username:String, sexuality:String, gender:String, catFact:String)
 
 @Singleton
 class MeowderController @Inject() (
@@ -68,11 +67,6 @@ class MeowderController @Inject() (
         "year" -> number(max = 1999)
     )(AgeCheck.apply)(AgeCheck.unapply))
     
-  val profileForm = Form(mapping(
-    "username" -> nonEmptyText,
-    "sexuality" -> nonEmptyText,
-    "gender" -> nonEmptyText,
-    "catFact" -> nonEmptyText)(Profile.apply)(Profile.unapply))
   
   def datingSite = Action { implicit request =>
     Ok(views.html.datingApp())
