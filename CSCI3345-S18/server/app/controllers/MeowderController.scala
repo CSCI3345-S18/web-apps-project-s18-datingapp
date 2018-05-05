@@ -90,6 +90,10 @@ class MeowderController @Inject() (
     Ok(views.html.meowderLogin((loginForm)))
   }
   
+  def catFeed = Action { implicit request =>
+    Ok(views.html.catFeed())
+  }
+  
   //[TODO] Need to edit almostDone so it'll keep FirstName and transfer it to createAccount Pagr
   def addUser = Action.async { implicit request =>
     Console.println("inside addUser")

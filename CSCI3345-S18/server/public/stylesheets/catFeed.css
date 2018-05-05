@@ -1,5 +1,9 @@
+html {
+	height: 100%;
+}
+
 body {
-    background-color: #b981d1;
+    background-color: #b981d1 !important;
 }
 
 #logo {

@@ -86,6 +86,8 @@ POST	/addFact 					controllers.MeowderController.addFact(email: String)
 
 GET		/profile					controllers.MeowderController.profile(email: String)
 
+GET		/catFeed					controllers.MeowderController.catFeed
+
 GET		/chat						controllers.MeowderChatController.index
 GET		/chatsocket					controllers.MeowderChatController.socket
 

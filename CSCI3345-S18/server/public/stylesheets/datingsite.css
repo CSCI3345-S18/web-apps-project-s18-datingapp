@@ -1,6 +1,6 @@
 body {
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-    background-color:#42f4b3;
+    background-color:#42f4b3 !important;
 }
 
 .catPic {
@@ -49,6 +49,7 @@ body {
 #sex {
     width: 130px;
     height: 50px;
+    font-size: 17px; 
 }
 
 #gender {
@@ -75,10 +76,10 @@ body {
     border: 1px solid black;
 } 
 
-#existingaccount {
-    position: absolute;
-    top: 45px;
-    right: 60px;
+.existingaccount {
+	position: absolute; 
+    top: 40px;
+    right: 100px;
 }
 
 #createContainer {
@@ -123,25 +124,25 @@ body {
 
 .austinCat {
     position: absolute;
-    top: 1300px;
+    top: 1000px;
     right: 90px;
 } 
 
 .kayakoCat {
     position:absolute;
-    top: 1900px;
+    top: 1600px;
     left: 130px;
 }
 
 .laurenCat {
     position: absolute;
-    top: 2200px;
+    top: 1900px;
     right: 300px;
 }
 
 .emilyCat {
     position: absolute;
-    top: 2900px;
+    top: 2500px;
     left: 130px;
 }
 
