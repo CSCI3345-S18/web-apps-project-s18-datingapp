@@ -30,7 +30,7 @@ case class NewUser(username: String, email: String, password:String)
 case class NewCat(catname:String, ownername:String, breed:String, gender:String)
 case class Login(email:String, password:String)
 case class AgeCheck(firstname: String, month: Int, day:Int, year:Int)
-case class Profile(email: String, catFact: String)
+case class Profile(catFact: String)
 
 
 @Singleton
@@ -70,7 +70,6 @@ class MeowderController @Inject() (
     )(AgeCheck.apply)(AgeCheck.unapply))
     
    val profileForm = Form(mapping(
-      "username" -> nonEmptyText,
       "catFact" -> nonEmptyText)(Profile.apply)(Profile.unapply))
       
   
@@ -155,14 +154,14 @@ class MeowderController @Inject() (
     factFuture.map(facts => Ok(views.html.profile(email, facts, 
   }*/
   
-  def addFact(email:String) = Action.async { implicit request =>
+  def addFact(email: String) = Action.async { implicit request =>
     profileForm.bindFromRequest().fold(
         formWithErrors => {
           val Future = MeowderQueries.allUsers(db)
           Future.map(facts => BadRequest(views.html.profile(email, formWithErrors)))
         },
         newFact => {
-          val addFuture = MeowderQueries.addFact(newFact.email, Option(newFact.catFact), db)
+          val addFuture = MeowderQueries.addFact(email, Option(newFact.catFact), db)
           addFuture.map { cnt =>
           if (cnt == 1) Redirect(routes.MeowderController.profile(email)).flashing("message" -> "Meow!")
           else Redirect(routes.MeowderController.profile(email)).flashing("error" -> "Failed to add...")

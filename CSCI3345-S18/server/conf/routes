@@ -82,7 +82,7 @@ POST	/createAccount				controllers.MeowderController.addUser
 
 POST	/almostDone					controllers.MeowderController.ageCheck
 
-POST	/profile					controllers.MeowderController.addFact(email: String)
+POST	/addFact 					controllers.MeowderController.addFact(email: String)
 
 GET		/profile					controllers.MeowderController.profile(email: String)
 

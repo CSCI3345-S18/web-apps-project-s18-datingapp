@@ -21,7 +21,6 @@ Have an account?
 <h2>CAT FACT: A cat usually has about 12 whiskers on each side of its face.</h2>
 @main("User Profile") {
 	@helper.form(action = helper.CSRF(routes.MeowderController.addFact(email))) {
-	  <input type="hidden" name="email" value="@email">
 	  @helper.inputText(factForm("catFact"))
 	  <input type="submit" name="loginSubmission" value="Add Task">
 	}	
