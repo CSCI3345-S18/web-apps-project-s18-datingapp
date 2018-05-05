@@ -77,9 +77,15 @@ object MeowderQueries {
     }
   }
   
-  /*def addCatFact(username: String, catFact: CatFact, db: Database)(implicit ex: ExecutionContext): Future[Option[User]] = {
+  def allFacts(email: String, db: Database)(implicit ec: ExecutionContext): Future[Seq[Option[String]]] = {
     db.run {
-      users += User()
+      users.filter(_.email === email).map(_.catFact).result
     }
-  }*/
+  }
+  
+  def addFact(email: String, catFact: Option[String], db: Database)(implicit ex: ExecutionContext): Future[Int] = {
+    db.run {
+      users.filter(u => u.email === email).map(_.catFact).update(catFact)
+    }
+  }
 }
