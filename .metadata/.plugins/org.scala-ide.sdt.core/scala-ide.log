@@ -7,3 +7,13 @@
 2018-05-03 15:52:38,175  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
 2018-05-03 16:02:14,390  WARN [scala-execution-context-global-434] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
 2018-05-03 16:02:14,390  WARN [scala-execution-context-global-434] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-05 16:47:56,233  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-05 16:47:56,234  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-05 16:48:05,647  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for MEOWDER-S18-client, setting default to 2.12.
+2018-05-05 16:48:05,653  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for MEOWDER-S18-client, setting default to 2.12.
+2018-05-05 16:48:06,114  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-05 16:48:06,115  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-05 16:48:06,454  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-05 16:48:06,454  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-05 16:48:12,500  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-05 16:48:12,501  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
