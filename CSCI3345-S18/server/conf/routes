@@ -84,6 +84,8 @@ POST	/almostDone					controllers.MeowderController.ageCheck
 
 POST	/addFact 					controllers.MeowderController.addFact(username: String, email: String)
 
+POST	/addCatInfo					controllers.MeowderController.addCatInfo(username: String, email: String)
+
 GET		/profile					controllers.MeowderController.profile(username: String, email: String)
 
 POST	/catFeed					controllers.MeowderController.catFeed(email: String)

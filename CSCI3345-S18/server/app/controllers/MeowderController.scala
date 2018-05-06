@@ -92,7 +92,7 @@ class MeowderController @Inject() (
   }
   
   def profile(username: String, email: String) = Action { implicit request =>
-    Ok(views.html.profile(username, email, profileForm))
+    Ok(views.html.profile(username, email, profileForm, newCatForm))
   }
   
   //[TODO] Need to edit almostDone so it'll keep FirstName and transfer it to createAccount Pagr
@@ -122,15 +122,15 @@ class MeowderController @Inject() (
         usersFuture.map(users => BadRequest(views.html.meowderLogin(formWithErrors)))
       },
       newUser => {
-        val verifyFuture = MeowderQueries.verify(newUser.email, newUser.password, db)
+        val verifyFuture = MeowderQueries.verify(newUser.username, newUser.email, newUser.password, db)
         verifyFuture.flatMap { user =>
           if(user.nonEmpty == true){
            //[TODO]Change here after the profile page is created!!
            val usersFuture = MeowderQueries.findUserByEmail(newUser.email, db)
-           usersFuture.map(users => Ok(views.html.profile(newUser.username, newUser.email, profileForm)))
+           usersFuture.map(users => Ok(views.html.profile(newUser.username, newUser.email, profileForm, newCatForm)))
           }else{
           val Future = MeowderQueries.allUsers(db)
-          Future.map(books => BadRequest(views.html.datingApp()))
+          Future.map(books => Redirect(routes.MeowderController.login()).flashing("error" -> "Incorrect Username, Email or Password!"))
           }
         }
       })
@@ -160,17 +160,32 @@ class MeowderController @Inject() (
     profileForm.bindFromRequest().fold(
         formWithErrors => {
           val Future = MeowderQueries.allUsers(db)
-          Future.map(facts => BadRequest(views.html.profile(username, email, formWithErrors)))
+          Future.map(facts => BadRequest(views.html.profile(username, email, formWithErrors, newCatForm)))
         },
         newFact => {
           val addFuture = MeowderQueries.addFact(email, Option(newFact.catFact), db)
           addFuture.map { cnt =>
-          if (cnt == 1) Redirect(routes.MeowderController.profile(username, email)).flashing("message" -> "Meow!")
+          if (cnt == 1) Redirect(routes.MeowderController.profile(username, email)).flashing("message" -> "Meow! Fact Added.")
           else Redirect(routes.MeowderController.profile(username, email)).flashing("error" -> "Failed to add...")
           }
         })
   }
 
+  def addCatInfo(username: String, email: String) = Action.async { implicit request =>
+    newCatForm.bindFromRequest().fold(
+        formWithErrors => { 
+          val Future = MeowderQueries.allCats(username, db)
+          Future.map(cats => BadRequest(views.html.profile(username,email, profileForm, formWithErrors)))
+        },
+        newCat => {
+          val addFuture = MeowderQueries.addCat(newCat, db)
+          addFuture.map { cnt =>
+            if (cnt == 1) Redirect(routes.MeowderController.profile(username, email)).flashing("message" -> "Meow! Cat Information Added.")
+            else Redirect(routes.MeowderController.profile(username, email)).flashing("error" -> "Failed to add...")
+          }
+        })
+  }
+  
   def likeFact(userone: String, usertwo: String) = Action.async { implicit request => 
     matchUsersForm.bindFromRequest().fold(
         formWithErrors => {

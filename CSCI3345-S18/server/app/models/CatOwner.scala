@@ -20,9 +20,9 @@ object MeowderQueries {
     db.run(users.result)
   }
   
-  def allCats(catname: String, db: Database)(implicit ec: ExecutionContext):Future[Seq[Cat]] = {
+  def allCats(ownername: String, db: Database)(implicit ec: ExecutionContext):Future[Seq[Cat]] = {
     db.run{
-      val catlist = cats.filter(_.catname === catname).result
+      val catlist = cats.filter(_.ownername === ownername).result
       catlist
     }
   }
@@ -78,9 +78,9 @@ object MeowderQueries {
     }
   }
   
-  def verify(email: String, password: String, db: Database)(implicit ex:ExecutionContext):Future[Option[User]] = {
+  def verify(username: String, email: String, password: String, db: Database)(implicit ex:ExecutionContext):Future[Option[User]] = {
     db.run{
-      users.filter(u => u.email === email && u.password === password).result.headOption
+      users.filter(u => u.username === username && u.email === email && u.password === password).result.headOption
     }
   }
   

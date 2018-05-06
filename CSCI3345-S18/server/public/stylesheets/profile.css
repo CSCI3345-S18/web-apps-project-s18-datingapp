@@ -16,39 +16,22 @@ body {
     margin-left: 1600px;
 }
 
-.existingaccount {
-    margin-left: 1650px;
-    margin-top: -40px;
-    color: white;
-}
-
-.signin {
-    width: 70px; 
-    height: 30px;
-    color: white;
-    border-radius: 6px; 
-    background-color: #b981d1; 
-    border: 1px solid white; 
-}
-
 .indentation {
     margin-top: 70px; 
     margin-left: 60px;
 }
 
 #name {
-    font-size: 60px;
+    font-size: 100px;
     color: white; 
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    margin-top: -130px; 
-    margin-left: 300px;
+    margin-top: 130px; 
 }
 
 #message {
-    width: 130px; 
-    height: 30px;
-    margin-left: 350px; 
-    margin-top: -55px;
+    width: 200px; 
+    height: 40px;
+    margin-top: 0px;
 }
 
 #buycatfood {

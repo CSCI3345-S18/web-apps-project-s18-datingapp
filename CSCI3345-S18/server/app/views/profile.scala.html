@@ -1,5 +1,5 @@
 @* profile Template File *@
-@(username: String, email: String, factForm: Form[Profile])(implicit request: RequestHeader, flash: Flash, messagesProvider: MessagesProvider)
+@(username: String, email: String, factForm: Form[Profile], catInfoForm: Form[NewCat])(implicit request: RequestHeader, flash: Flash, messagesProvider: MessagesProvider)
 
 <head>
 <title>Sarah Z.</title>
@@ -8,22 +8,28 @@
 
 <body>
 <h1 id="logo">Meowder</h1>
-<div class="existingaccount">
-Have an account?
-<button type="button" class="signin">Sign In</button> 
-</div>
 <div class="indentation">
-<img src="@routes.Assets.versioned("images/profilepic.jpg")" width="13%">
 <h2 id="name">@username</h2>
-<button type="button" id="message">Message Her</button><br>
+<button type="button" id="message">Chat With Your Matches!</button><br>
 <div id="catfacts">
 <br><br>
-<h2>CAT FACT: A cat usually has about 12 whiskers on each side of its face.</h2>
+<h2>Send Your Cat Fact and Information to the Anonymous Feed!</h2>
+<h4>Cat Tip: In order to match with other pawtners, the following information needs to be filled out:</h4>
+<br><br>
 @main("User Profile") {
 	@helper.form(action = helper.CSRF(routes.MeowderController.addFact(username, email))) {
 	  @helper.inputText(factForm("catFact"))
-	  <input type="submit" name="loginSubmission" value="Add Task">
+	  <input type="submit" name="loginSubmission" value="Add Cat Fact">
 	}	
+	<br><br>
+	@helper.form(action = helper.CSRF(routes.MeowderController.addCatInfo(username, email))) {
+	  @helper.inputText(catInfoForm("catname"))
+	  <input type ="hidden" name="ownername" value="@username">
+	  @helper.inputText(catInfoForm("breed"))
+	  @helper.inputText(catInfoForm("gender"))
+	  <input type="submit" name="catInfo" value="Add Cat Information">
+	  
+	}
 	<br><br>
 	@helper.form(action = helper.CSRF(routes.MeowderController.catFeed(email))) {
 		<input type="submit" name="goToCatFeed" value="Go To Cat Feed">
