@@ -1,5 +1,5 @@
 body {
-    background-color: #77a7f4;
+    background-color: #77a7f4 !important; 
 }
 
 .clearfix:before, .clearfix:after {
@@ -9,59 +9,30 @@ body {
 .clearfix:after { clear: both; }
 
 
-.container {
-  bottom: 0;
-  font-size: 12px;
-  right: 24px;
-	position: fixed;
-	width: 400px;
-  height: 400px;
-  color: #ff;
- 
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-
-
-.chat-close {
-  background: #1b2126;
-	border-radius: 45%;
-	color: #fff;
-	display: block;
-	float: right;
-	font-size: 10px;
-	height: 16px;
-	line-height: 16px;
-	margin: 2px 0 0 0;
-	text-align: center;
-	width: 16px;
+.header {
+  background: #1d3660 !important;
+  border-radius: 10px 10px 10px !important;
+  color: #ffffff !important;
+  padding: 27px 40px !important;
+  min-width: 500px !important;
+  max-width: 1200px !important;
+  margin: auto !important;
 }
 
 .live-chat {
-  width: 50px;
-  min-width: 390px;
-	height: 600px;
-	background: #ff;
+  min-width: 500px;
+  max-width: 1200px;
+	height: 400px;
 	padding: 0px;
 	margin: 20px auto;
 	box-shadow: 0 3px #ccc;
-  
-}
-
-
-
-.live-chat header {
-  background: #1d3660;
-	border-radius: 10px 10px 0 0;
-	color: #fff;
-	cursor: pointer;
-	padding: 8px 27px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
 .live-chat h4 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .live-chat h6 {
@@ -73,28 +44,46 @@ body {
   background: #fff;
   align-items: flex-start;
   margin-bottom: 10px;
+  border-radius: 10px 10px 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 19px;
   
 }
 
 
 div.live-chat .match{
   background: #ddd;
-  padding-bottom: 25px;
+  width: 25%;
+  display: block;
+  float: left;
+  clear: both;
 }
 
 div.live-chat .me{
   background: #1addaf;
-  padding-bottom: 25px;
-  
+  width: 25%;
+  display: block;
+  float: right;
+  clear: both;
 }
 
 .chat-message-content {
-	margin-left: 56px;
+	margin-left: 25px;
 }
 
 .chat-time {
 	float: right;
 	font-size: 10px;
 }
-  
 
+ textarea[name=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin: 2px auto;
+  display: block;
+  white-space: normal;
+  border-radius: 10px 10px 10px;
+  resize: none;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
