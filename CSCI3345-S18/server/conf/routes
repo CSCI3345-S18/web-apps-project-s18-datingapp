@@ -82,11 +82,19 @@ POST	/createAccount				controllers.MeowderController.addUser
 
 POST	/almostDone					controllers.MeowderController.ageCheck
 
-POST	/addFact 					controllers.MeowderController.addFact(email: String)
+POST	/addFact 					controllers.MeowderController.addFact(username: String, email: String)
 
-GET		/profile					controllers.MeowderController.profile(email: String)
+GET		/profile					controllers.MeowderController.profile(username: String, email: String)
 
-GET		/catFeed					controllers.MeowderController.catFeed
+POST	/catFeed					controllers.MeowderController.catFeed(email: String)
+
+GET		/catFeed					controllers.MeowderController.catFeed(email: String)
+
+POST	/likeFact					controllers.MeowderController.likeFact(userone: String, usertwo: String)
+
+GET		/updateMatch				controllers.MeowderController.updateMatch(userone: String, usertwo: String)
+
+GET		/addMatch					controllers.MeowderController.addMatch(userone: String, usertwo: String)
 
 GET		/chat						controllers.MeowderChatController.index
 GET		/chatsocket					controllers.MeowderChatController.socket

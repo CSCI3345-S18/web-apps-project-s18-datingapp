@@ -13,46 +13,16 @@
 <h2>You're Almost There!</h2>
 <br><br>
 @helper.form(action = helper.CSRF(routes.MeowderController.ageCheck)) {
-	  @helper.inputText(ageForm("firstname"))
 	  <b>BIRTHDATE</b>
 	  @helper.inputText(ageForm("month"))
 	  @helper.inputText(ageForm("day"))
 	  @helper.inputText(ageForm("year"))
 	  	 <input type="submit" value="Submit">
 }
-
-<b>FIRST NAME</b>
-<form>
-<input type="text" name="fname" placeholder="First Name">
-</form>
-<br>
-<b>BIRTHDATE</b> <br>
-<select>
-    <option value="" disabled selected>Month</option>
-    <option value="jan">January</option>
-    <option value="feb">February</option>
-    <option value="mar">March</option>
-    <option value="apr">April</option>
-    <option value="may">May</option>
-    <option value="jun">June</option>
-    <option value="jul">July</option>
-    <option value="aug">August</option>
-    <option value="sept">September</option>
-    <option value="oct">October</option>
-    <option value="nov">November</option>
-    <option value="dec">December</option>
-</select>
-<select>
-    <option value="" disabled selected>Day</option>
-</select>
-<select>
-    <option value="" disabled selected>Year</option>
-</select><br><br>
-<button type="button">Continue</button>
-</div>
 <div class="existingaccount">
-<p>Have an account?</p>
-<button type="button" class="signin">Sign In</button>
+Have an account?
+<form action="@routes.MeowderController.login()">
+  <button type="submit" class="signin">Sign In</button></form></div>
 </div>
 </body>
 </html>

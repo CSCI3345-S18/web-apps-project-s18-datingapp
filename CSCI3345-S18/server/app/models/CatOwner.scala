@@ -20,6 +20,13 @@ object MeowderQueries {
     db.run(users.result)
   }
   
+  def allCats(catname: String, db: Database)(implicit ec: ExecutionContext):Future[Seq[Cat]] = {
+    db.run{
+      val catlist = cats.filter(_.catname === catname).result
+      catlist
+    }
+  }
+  
   def findUserByEmail(email: String, db: Database)(implicit ec: ExecutionContext): Future[Option[User]] = {
     db.run {
       users.filter(_.email === email).result.headOption
@@ -49,7 +56,7 @@ object MeowderQueries {
   }
   
   //See if userone has liked usertwo already
-  def isLiked(userone:String, usertwo: String, db: Database)(implicit ex:ExecutionContext):Future[Option[Matched]] = {
+  def isLiked(userone: String, usertwo: String, db: Database)(implicit ex:ExecutionContext):Future[Option[Matched]] = {
     db.run{
       matches.filter(m => m.userone === userone && m.usertwo === usertwo).result.headOption
     }
@@ -77,9 +84,9 @@ object MeowderQueries {
     }
   }
   
-  def allFacts(email: String, db: Database)(implicit ec: ExecutionContext): Future[Seq[Option[String]]] = {
+  def allFacts(db: Database)(implicit ec: ExecutionContext): Future[Seq[User]]/*Future[Seq[Option[String]]]*/ = {
     db.run {
-      users.filter(_.email === email).map(_.catFact).result
+      users.result//filter(_.email === email).map(_.catFact).result
     }
   }
   

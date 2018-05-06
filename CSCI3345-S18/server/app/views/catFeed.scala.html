@@ -1,5 +1,5 @@
 @* catFeed Template File *@
-@()(implicit request: RequestHeader, flash: Flash, messagesProvider: MessagesProvider)
+@(email: String, catFacts: Seq[User], likeForm: Form[MatchUsers])(implicit request: RequestHeader, flash: Flash, messagesProvider: MessagesProvider)
 
 <head>
 <title>Feed</title>
@@ -7,11 +7,25 @@
 </head>
 
 <body>
-<h1>Cat Facts Feed</h1>
 <br>
 
 @main("Cat Feed") {
-	<h2>hello</h2>
+<h1>Cat Facts Feed</h1>
+<br>
+<table>
+	@for(f <- catFacts) {
+		@if(f.catFact != None) {
+			<tr><td>@f.catFact</td>
+			<td>@helper.form(action = helper.CSRF(routes.MeowderController.likeFact(email, f.email))) {
+				<input type="hidden" name="userone" value="@email">
+				<input type="hidden" name="usertwo" value="@f.email"> 
+				<input type="submit" name="likeFact" value="Like">
+			}</td>
+			</tr>
+			@{System.out.println(f.catFact)} 
+		}
+	}
+</table>
 }
 
 </body>

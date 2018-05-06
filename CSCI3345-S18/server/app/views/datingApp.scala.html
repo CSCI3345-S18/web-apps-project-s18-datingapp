@@ -29,7 +29,10 @@ purrfect pawtner and sign up today.</p> <br><br>
     <option value="man">Man</option>
     <option value="othergender">Other</option>
 </select>
-<button type="button" id="continue" action="@routes.MeowderController.almostDone()">Continue</button></div>
+<form action="@routes.MeowderController.almostDone()">
+	<button type="submit" id="Continue">Continue</button>
+</form>
+	</div>
 <br><br>
 <div class="existingaccount">
 Have an account?

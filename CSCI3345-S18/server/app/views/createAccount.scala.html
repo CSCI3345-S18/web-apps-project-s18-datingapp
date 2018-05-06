@@ -1,5 +1,5 @@
 @* createAccount Template File *@
-@(username:String, userForm :Form[NewUser])(implicit request: MessagesRequestHeader, flash:Flash)
+@(userForm :Form[NewUser])(implicit request: MessagesRequestHeader, flash:Flash)
 
 <head>
 	<title>Create Account</title>
@@ -10,7 +10,7 @@
 <h1>Last Step!</h1>
 <br><br>
 @helper.form(action = helper.CSRF(routes.MeowderController.addUser)) {
-	  <input type = "hidden" name = "username" value = "@username">
+	  @helper.inputText(userForm("username"))
 	  @helper.inputText(userForm("email"))
 	  @helper.inputPassword(userForm("password"))
 	  <input type="submit" value="Add">
