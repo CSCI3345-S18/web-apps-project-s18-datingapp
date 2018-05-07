@@ -152,8 +152,6 @@ class MeowderController @Inject() (
             Console.println("cnt =1")
             Redirect(routes.MeowderController.createAccount).flashing("message" -> "You are old enough to make an account!")
           }
-          //else Redirect(routes.MeowderController.almostDone).flashing("error" -> "Failed to create your account...you must be at least 18 years old.")
-        //}
       })
   }
   
@@ -188,23 +186,13 @@ class MeowderController @Inject() (
   }
   
   def listCatInfo(emailone: String, emailtwo: String) = Action.async { implicit request =>
-    newCatForm.bindFromRequest().fold(
-        formWithErrors => {
-          val Future = MeowderQueries.viewMatches(emailone, db)
-          Future.map(cats => BadRequest(views.html.matches(emailone, cats)))
-        },
-        viewCatInfo => {
-          val viewFuture = MeowderQueries.findCatInfoByEmail(emailtwo, db)
-          viewFuture.map { info =>
-            if(info.nonEmpty == true) Ok(views.html.catInfo(info))
-            else Ok(views.html.catInfo(info))
-          }
-        })
+    val viewFuture = MeowderQueries.findCatInfoByEmail(emailtwo, db)
+    viewFuture.map { info =>
+      if(info.nonEmpty == true) Ok(views.html.catInfo(info))
+      else Ok(views.html.catInfo(info))
+    }
+        
   }
-  
- /* def viewCatInfo(emailtwo: String) = Action.async { implicit request =>
-    Ok(views.html.catInfo(cats))
-  }*/
   
   def likeFact(userone: String, usertwo: String) = Action.async { implicit request => 
     matchUsersForm.bindFromRequest().fold(
@@ -228,16 +216,16 @@ class MeowderController @Inject() (
               } else {
                 val alreadyLikeFuture = MeowderQueries.isLiked(usertwo, userone, db)
                 alreadyLikeFuture.map { alreadyLiked =>
-                if(alreadyLiked.nonEmpty == true) {
-                  Redirect(routes.MeowderController.catFeed(userone))
-                } 
-               }
-              Redirect(routes.MeowderController.addMatch(userone, usertwo))
-            }
+                  if(alreadyLiked.nonEmpty == true) {
+                    Redirect(routes.MeowderController.catFeed(userone))
+                  } 
+                }
+                Redirect(routes.MeowderController.addMatch(userone, usertwo))
+              }
             
-           }
+             }
             
-         }
+          }
         })
   }
   
