@@ -177,6 +177,7 @@ class MeowderController @Inject() (
   def addCatInfo(username: String, email: String) = Action.async { implicit request =>
     newCatForm.bindFromRequest().fold(
         formWithErrors => { 
+          Console.println("cat info error")
           val Future = MeowderQueries.allCats(username, db)
           Future.map(cats => BadRequest(views.html.profile(username,email, profileForm, formWithErrors)))
         },

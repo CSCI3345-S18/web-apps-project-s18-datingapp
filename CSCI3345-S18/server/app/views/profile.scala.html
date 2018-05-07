@@ -2,7 +2,7 @@
 @(username: String, email: String, factForm: Form[Profile], catInfoForm: Form[NewCat])(implicit request: RequestHeader, flash: Flash, messagesProvider: MessagesProvider)
 
 <head>
-<title>Sarah Z.</title>
+<title>@username</title>
 <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/profile.css")">
 </head>
 
@@ -32,6 +32,7 @@
 	@helper.form(action = helper.CSRF(routes.MeowderController.addCatInfo(username, email))) {
 	  @helper.inputText(catInfoForm("catname"))
 	  <input type ="hidden" name="ownername" value="@username">
+	  <input type ="hidden" name="owneremail" value="@email">
 	  @helper.inputText(catInfoForm("breed"))
 	  @helper.inputText(catInfoForm("gender"))
 	  <input type="submit" name="catInfo" value="Add Cat Information"> 
