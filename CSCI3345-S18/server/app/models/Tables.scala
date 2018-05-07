@@ -43,4 +43,14 @@ object Tables {
     def * = (userone, usertwo, status) <> (Matched.tupled, Matched.unapply)
   }
   val matches = TableQuery[Matches]
+  
+  class Chats(tag: Tag) extends Table[Chat](tag, "chat") {
+    def id = column[Int]("id")
+    def sender = column[Option[String]]("sender")
+    def receiver = column[Option[String]]("receiver")
+    def startDate = column[Option[String]]("startDate")
+    def message = column[Option[String]]("message")
+    def * = (id, sender, receiver, startDate, message) <> (Chat.tupled, Chat.unapply)   
+  }
+  val chats = TableQuery[Chats]
 }

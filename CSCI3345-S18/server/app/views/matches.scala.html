@@ -13,6 +13,10 @@
 						<input type="submit" name="catInfo" value="View Cat Info">
 						}
 					</td>
+					<td>@helper.form(action = helper.CSRF(routes.MeowderChatController.createChatPage(m.userone, m.usertwo))) {
+						<input type="submit" name="chat" value="Chat">
+						}
+					</td>
 			} else {
 				@if(m.usertwo == email) {
 						<td>@m.userone</td>
@@ -20,6 +24,10 @@
 							<input type="submit" name="catInfo" value="View Cat Info">
 							}
 						</td>
+						<td>@helper.form(action = helper.CSRF(routes.MeowderChatController.createChatPage(m.usertwo, m.userone))) {
+						<input type="submit" name="chat" value="Chat">
+						}
+					</td>
 				}
 			}
 			</tr>
