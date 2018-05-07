@@ -1,0 +1,50 @@
+body {
+    background-color: #fca96a;
+}
+
+.indentation {
+    margin-top: 70px; 
+    margin-left: 60px; 
+}
+
+#laststep {
+    font-size: 55px;
+    color: white; 
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; 
+}
+
+.signin {
+    width: 70px;
+    height: 30px; 
+    border-radius: 6px; 
+    background-color: #fca96a; 
+    border: 1px solid black; 
+}
+
+.existingaccount {
+    margin-left: 1650px; 
+    margin-top: -35px; 
+}
+
+#logo {
+    margin-top: 45px; 
+    margin-left: 60px; 
+    font-size: 30px;
+    color: #fca96a; 
+    font-style: italic;
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black; 
+}
+
+.textbox {
+    width: 500px; 
+    height: 50px; 
+    font-size: 17px; 
+}
+
+#createbutton {
+    width: 150px; 
+    height: 50px; 
+    font-size: 17px;
+    background-color: #837f7e;
+    color: white; 
+}

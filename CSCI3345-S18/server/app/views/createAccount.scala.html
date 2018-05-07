@@ -1,0 +1,43 @@
+@* createAccount Template File *@
+@(userForm :Form[NewUser])(implicit request: MessagesRequestHeader, flash:Flash)
+
+<head>
+	<title>Create Account</title>
+	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/createAccount.css")">
+</head>
+
+@main("Create Account") {
+<h1>Last Step!</h1>
+<br><br>
+@helper.form(action = helper.CSRF(routes.MeowderController.addUser)) {
+	  @helper.inputText(userForm("username"))
+	  @helper.inputText(userForm("email"))
+	  @helper.inputPassword(userForm("password"))
+	  <input type="submit" value="Add">
+}
+<br><br>
+<p>Have an account?</p>
+<form action="@routes.MeowderController.login()">
+  <button type="submit" class="signin">Sign In</button>
+</form>
+	
+<!-- Previous Code
+<h1>Last Step!</h1>
+<br><br>
+<b>EMAIL</b>
+<form action="@routes.MeowderController.addUser()">
+<input type="hidden" id="username" value="John">
+<input type="text" name="email" placeholder="Email">
+</form>
+<br>
+<b>PASSWORD</b>
+<form>
+<input type="text" name="password" placeholder="Password">
+</form>
+<br><br>
+<p>Have an account?</p>
+<form action="@routes.MeowderController.login()">
+  <button type="submit" class="signin">Sign In</button>
+</form>
+	-->
+} 

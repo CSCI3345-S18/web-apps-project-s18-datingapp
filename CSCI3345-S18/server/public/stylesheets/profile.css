@@ -1,0 +1,65 @@
+body {
+    background-color: #b981d1 !important;
+}
+
+#logo {
+    margin-top: 45px; 
+    margin-left: 60px; 
+    font-size: 30px; 
+    color: #b981d1; 
+    font-style: italic;
+    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white; 
+}
+
+#sarahcat {
+    margin-top: 500px;
+    margin-left: 1600px;
+}
+
+.indentation {
+    margin-top: 70px; 
+    margin-left: 60px;
+}
+
+#name {
+    font-size: 100px;
+    color: white; 
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin-top: 130px; 
+}
+
+#message {
+    width: 200px; 
+    height: 40px;
+    margin-top: 0px;
+}
+
+#buycatfood {
+    width: 130px;
+    height:30px;
+    margin-left: 350px;
+    margin-top: -20px;
+}
+
+#About {
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+#sarahBio {
+    color: white;
+}
+
+#intro {
+    font-size: 30px;
+}
+
+#cattalk {
+    font-size: 30px;
+}
+
+#catfacts {
+    font-size: 20px;
+    color: white;
+}
+    
