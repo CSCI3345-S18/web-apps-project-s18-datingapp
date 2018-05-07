@@ -1,0 +1,341 @@
+2018-05-07 00:02:56,862  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:02:56,864  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:02:57,186  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-server has platform default sourceLevel.
+2018-05-07 00:02:57,186  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-server runs on platform default installation.
+2018-05-07 00:02:58,478  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-server has platform default sourceLevel.
+2018-05-07 00:02:58,478  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-server runs on platform default installation.
+2018-05-07 00:02:58,683  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for MEOWDER-S18-server, setting default to 2.12.
+2018-05-07 00:02:58,700  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for MEOWDER-S18-server, setting default to 2.12.
+2018-05-07 00:04:24,219  WARN [Worker-5] - ScalaProject - Project MEOWDER-S18-client has platform default sourceLevel.
+2018-05-07 00:04:24,224  WARN [Worker-5] - ScalaProject - Project MEOWDER-S18-client runs on platform default installation.
+2018-05-07 00:04:24,253  WARN [Worker-5] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:04:24,254  WARN [Worker-5] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:04:24,428  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for MEOWDER-S18-server, setting default to 2.12.
+2018-05-07 00:04:24,435  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for MEOWDER-S18-server, setting default to 2.12.
+2018-05-07 00:04:25,077  WARN [Worker-3] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:04:25,078  WARN [Worker-3] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:04:29,734  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-client has platform default sourceLevel.
+2018-05-07 00:04:29,735  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-client runs on platform default installation.
+2018-05-07 00:04:30,187  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:04:30,187  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:04:43,918  WARN [Java indexing] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:04:43,918  WARN [Java indexing] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:04:44,224  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:04:44,224  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:07:29,596  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-client has platform default sourceLevel.
+2018-05-07 00:07:29,597  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-client runs on platform default installation.
+2018-05-07 00:07:29,617  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:07:29,617  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:07:29,839  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for MEOWDER-S18-server, setting default to 2.12.
+2018-05-07 00:07:29,853  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for MEOWDER-S18-server, setting default to 2.12.
+2018-05-07 00:07:32,545  WARN [Worker-3] - ScalaProject - Project MEOWDER-S18-client has platform default sourceLevel.
+2018-05-07 00:07:32,546  WARN [Worker-3] - ScalaProject - Project MEOWDER-S18-client runs on platform default installation.
+2018-05-07 00:07:33,813  WARN [Worker-3] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:07:33,813  WARN [Worker-3] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:07:34,101  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:07:34,101  WARN [Worker-1] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:08:13,445 ERROR [Worker-7] - EclipseSbtBuildManager - ## Exception when compiling 45 sources to [/users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/bin]
+assertion failed: 
+  Precisely this override requires its invoker to hand out a non-null AbstractFile.
+     while compiling: /users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/target/scala-2.12/twirl/main/views/html/wsChat.template.scala
+        during phase: jvm
+     library version: version 2.12.2
+    compiler version: version 2.12.2
+  reconstructed args: -encoding utf8 -deprecation -javabootclasspath /usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/nashorn.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunjce_provider.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunec.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/dnsns.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunpkcs11.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/zipfs.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/localedata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jaccess.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/cldrdata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jfxrt.jar -classpath /usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/nashorn.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunjce_provider.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunec.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/dnsns.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunpkcs11.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/zipfs.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/localedata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jaccess.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/cldrdata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jfxrt.jar:/users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/bin:/users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/shared/src/main/scala:/usr/local/eclipse/plugins/org.scala-lang.scala-reflect_2.12.2.v20170412-161608-VFINAL-21d12e9.jar:/users/akim/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-server_2.12/jars/play-server_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play_2.12/jars/play_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.6.12.jar:/users/akim/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/users/akim/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.25.jar:/users/akim/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.25.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-streams_2.12/jars/play-streams_2.12-2.6.12.jar:/users/akim/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.1.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.typesafe/config/bundles/config-1.3.2.jar:/users/akim/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/jars/akka-protobuf_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.2.2.jar:/users/akim/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.6.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.8.11.jar:/users/akim/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.6.9.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-functional_2.12/jars/play-functional_2.12-2.6.9.jar:/users/akim/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar:/users/akim/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar:/users/akim/.ivy2/cache/com.google.guava/guava/bundles/guava-22.0.jar:/users/akim/.ivy2/cache/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.0.18.jar:/users/akim/.ivy2/cache/com.google.j2objc/j2objc-annotations/jars/j2objc-annotations-1.1.jar:/users/akim/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/jars/animal-sniffer-annotations-1.14.jar:/users/akim/.ivy2/cache/io.jsonwebtoken/jjwt/jars/jjwt-0.7.0.jar:/users/akim/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.6.jar:/users/akim/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/users/akim/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/users/akim/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/jars/filters-helpers_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-logback_2.12/jars/play-logback_2.12-2.6.12.jar:/users/akim/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/users/akim/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/jars/play-akka-http-server_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.0.11.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.0.11.jar:/users/akim/.ivy2/cache/com.vmunier/scalajs-scripts_2.12/jars/scalajs-scripts_2.12-1.1.2.jar:/users/akim/.ivy2/cache/com.typesafe.play/twirl-api_2.12/jars/twirl-api_2.12-1.3.15.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-guice_2.12/jars/play-guice_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.google.inject/guice/jars/guice-4.1.0.jar:/users/akim/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/users/akim/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-slick_2.12/jars/play-slick_2.12-3.0.3.jar:/users/akim/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/bundles/slick-hikaricp_2.12-3.2.1.jar:/users/akim/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/jars/play-jdbc-api_2.12-2.6.5.jar:/users/akim/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.6.jar:/users/akim/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/jars/slick-codegen_2.12-3.2.3.jar:/users/akim/.ivy2/cache/com.typesafe.slick/slick_2.12/bundles/slick_2.12-3.2.3.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-test_2.12/jars/play-test_2.12-2.6.12.jar:/users/akim/.ivy2/cache/junit/junit/jars/junit-4.12.jar:/users/akim/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar:/users/akim/.ivy2/cache/com.novocode/junit-interface/jars/junit-interface-0.11.jar:/users/akim/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar:/users/akim/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.2.jar:/users/akim/.ivy2/cache/org.fluentlenium/fluentlenium-core/jars/fluentlenium-core-3.3.0.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-support/jars/selenium-support-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-api/jars/selenium-api-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/jars/selenium-remote-driver-3.5.3.jar:/users/akim/.ivy2/cache/cglib/cglib-nodep/jars/cglib-nodep-3.2.4.jar:/users/akim/.ivy2/cache/org.apache.commons/commons-exec/jars/commons-exec-1.3.jar:/users/akim/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar:/users/akim/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.0.jar:/users/akim/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.3.jar:/users/akim/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.6.jar:/users/akim/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar:/users/akim/.ivy2/cache/net.java.dev.jna/jna-platform/jars/jna-platform-4.1.0.jar:/users/akim/.ivy2/cache/org.atteo.classindex/classindex/jars/classindex-3.4.jar:/users/akim/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.5.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/htmlunit-driver/jars/htmlunit-driver-2.27.jar:/users/akim/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/jars/htmlunit-2.27.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/xercesImpl.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/xml-apis.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/serializer.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/xalan-2.7.2.jar:/users/akim/.ivy2/cache/xalan/serializer/jars/xml-apis.jar:/users/akim/.ivy2/cache/xalan/serializer/jars/serializer-2.7.2.jar:/users/akim/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.5.3.jar:/users/akim/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/jars/htmlunit-core-js-2.27.jar:/users/akim/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/jars/neko-htmlunit-2.27.jar:/users/akim/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/users/akim/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/users/akim/.ivy2/cache/net.sourceforge.cssparser/cssparser/jars/cssparser-0.9.23.jar:/users/akim/.ivy2/cache/org.w3c.css/sac/jars/sac-1.3.jar:/users/akim/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/jars/websocket-client-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-client/jars/jetty-client-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/jars/websocket-common-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/jars/websocket-api-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/jars/selenium-firefox-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.scalatestplus.play/scalatestplus-play_2.12/jars/scalatestplus-play_2.12-3.1.2.jar:/users/akim/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.4.jar:/users/akim/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.4.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-java/jars/selenium-java-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-chrome-driver/jars/selenium-chrome-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-edge-driver/jars/selenium-edge-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-ie-driver/jars/selenium-ie-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-opera-driver/jars/selenium-opera-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-safari-driver/jars/selenium-safari-driver-3.5.3.jar:/users/akim/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar:/users/akim/.ivy2/cache/com.codeborne/phantomjsdriver/jars/phantomjsdriver-1.4.3.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws_2.12/jars/play-ws_2.12-2.6.5.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/jars/play-ws-standalone_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/jars/play-ws-standalone-xml_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/jars/play-ws-standalone-json_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/jars/play-ahc-ws_2.12-2.6.5.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/jars/play-ahc-ws-standalone_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/jars/cachecontrol_2.12-1.1.2.jar:/users/akim/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/users/akim/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/jars/shaded-asynchttpclient-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/shaded-oauth/jars/shaded-oauth-1.1.0.jar:/users/akim/.ivy2/cache/javax.cache/cache-api/jars/cache-api-1.0.0.jar -bootclasspath /usr/local/eclipse/plugins/org.scala-lang.scala-library_2.12.2.v20170412-161608-VFINAL-21d12e9.jar -unchecked -javaextdirs  
+
+  last tree to typer: TypeTree(class routes)
+       tree position: line 9 of /users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/target/scala-2.12/routes/main/controllers/routes.java
+            tree tpe: controllers.routes
+              symbol: class routes in package controllers
+   symbol definition: class routes extends Object (a ClassSymbol)
+      symbol package: controllers
+       symbol owners: class routes
+           call site: constructor routes in class routes in package controllers
+
+== Source file context for tree position ==
+
+     6 
+     7 import router.RoutesPrefix;
+     8 
+     9 public class routes {
+    10   
+    11   public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());
+    12   public static final controllers.ReverseBookController BookController = new controllers.ReverseBookController(RoutesPrefix.byNamePrefix());
+scala.tools.nsc.backend.jvm.BytecodeWriters$ClassBytecodeWriter.writeClass(BytecodeWriters.scala:120)
+scala.tools.nsc.backend.jvm.BytecodeWriters$ClassBytecodeWriter.writeClass$(BytecodeWriters.scala:118)
+scala.tools.nsc.backend.jvm.BytecodeWriters$$anon$4.writeClass(BytecodeWriters.scala:47)
+scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.sendToDisk$1(GenBCode.scala:408)
+scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.drainQ3(GenBCode.scala:428)
+scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.buildAndSendToDisk(GenBCode.scala:387)
+scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.run(GenBCode.scala:350)
+scala.tools.nsc.Global$Run.compileUnitsInternal(Global.scala:1427)
+scala.tools.nsc.Global$Run.compileUnits(Global.scala:1412)
+scala.tools.nsc.Global$Run.compileSources(Global.scala:1407)
+scala.tools.nsc.Global$Run.compile(Global.scala:1501)
+xsbt.CachedCompiler0.run(CompilerInterface.scala:126)
+xsbt.CachedCompiler0.run(CompilerInterface.scala:105)
+xsbt.CompilerInterface.run(CompilerInterface.scala:23)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+sbt.internal.inc.AnalyzingCompiler.call(AnalyzingCompiler.scala:259)
+sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:132)
+sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:111)
+sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$3(MixedAnalyzingCompiler.scala:79)
+scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+sbt.internal.inc.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:130)
+sbt.internal.inc.MixedAnalyzingCompiler.compileScala$1(MixedAnalyzingCompiler.scala:70)
+sbt.internal.inc.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:113)
+sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1(IncrementalCompilerImpl.scala:288)
+sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1$adapted(IncrementalCompilerImpl.scala:288)
+sbt.internal.inc.Incremental$.doCompile(Incremental.scala:90)
+sbt.internal.inc.Incremental$.$anonfun$compile$4(Incremental.scala:74)
+sbt.internal.inc.IncrementalCommon.recompileClasses(IncrementalCommon.scala:80)
+sbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:47)
+sbt.internal.inc.Incremental$.$anonfun$compile$3(Incremental.scala:74)
+sbt.internal.inc.Incremental$.manageClassfiles(Incremental.scala:117)
+sbt.internal.inc.Incremental$.compile(Incremental.scala:72)
+sbt.internal.inc.IncrementalCompile$.apply(Compile.scala:65)
+sbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:288)
+sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:252)
+sbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:156)
+sbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:235)
+sbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:143)
+org.scalaide.core.internal.builder.zinc.CachingCompiler.compile(CachingCompiler.scala:54)
+org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.aggressiveCompile(EclipseSbtBuildManager.scala:213)
+org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:146)
+org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:128)
+org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:84)
+org.scalaide.core.internal.project.scopes.BuildScopeUnit.build(BuildScopeUnit.scala:72)
+org.scalaide.core.internal.project.SbtScopesBuildManager.$anonfun$build$3(SbtScopesBuildManager.scala:53)
+org.scalaide.core.internal.project.SbtScopesBuildManager.$anonfun$build$3$adapted(SbtScopesBuildManager.scala:50)
+scala.collection.immutable.List.foreach(List.scala:389)
+org.scalaide.core.internal.project.SbtScopesBuildManager.build(SbtScopesBuildManager.scala:50)
+org.scalaide.core.internal.project.ScalaProject.build(ScalaProject.scala:596)
+org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:111)
+org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+           
+2018-05-07 00:08:13,451 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error in Scala compiler
+java.lang.AssertionError: assertion failed: 
+  Precisely this override requires its invoker to hand out a non-null AbstractFile.
+     while compiling: /users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/target/scala-2.12/twirl/main/views/html/wsChat.template.scala
+        during phase: jvm
+     library version: version 2.12.2
+    compiler version: version 2.12.2
+  reconstructed args: -encoding utf8 -deprecation -javabootclasspath /usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/nashorn.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunjce_provider.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunec.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/dnsns.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunpkcs11.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/zipfs.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/localedata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jaccess.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/cldrdata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jfxrt.jar -classpath /usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/nashorn.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunjce_provider.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunec.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/dnsns.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/sunpkcs11.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/zipfs.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/localedata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jaccess.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/cldrdata.jar:/usr/java/jdk1.8.0_144/jre/lib/ext/jfxrt.jar:/users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/bin:/users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/shared/src/main/scala:/usr/local/eclipse/plugins/org.scala-lang.scala-reflect_2.12.2.v20170412-161608-VFINAL-21d12e9.jar:/users/akim/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-server_2.12/jars/play-server_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play_2.12/jars/play_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.6.12.jar:/users/akim/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/users/akim/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.25.jar:/users/akim/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.25.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-streams_2.12/jars/play-streams_2.12-2.6.12.jar:/users/akim/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.1.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.typesafe/config/bundles/config-1.3.2.jar:/users/akim/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/jars/akka-protobuf_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.2.2.jar:/users/akim/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.6.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.5.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.8.11.jar:/users/akim/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.8.11.jar:/users/akim/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.6.9.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-functional_2.12/jars/play-functional_2.12-2.6.9.jar:/users/akim/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar:/users/akim/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar:/users/akim/.ivy2/cache/com.google.guava/guava/bundles/guava-22.0.jar:/users/akim/.ivy2/cache/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.0.18.jar:/users/akim/.ivy2/cache/com.google.j2objc/j2objc-annotations/jars/j2objc-annotations-1.1.jar:/users/akim/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/jars/animal-sniffer-annotations-1.14.jar:/users/akim/.ivy2/cache/io.jsonwebtoken/jjwt/jars/jjwt-0.7.0.jar:/users/akim/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.6.jar:/users/akim/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/users/akim/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/users/akim/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/jars/filters-helpers_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-logback_2.12/jars/play-logback_2.12-2.6.12.jar:/users/akim/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/users/akim/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/jars/play-akka-http-server_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.0.11.jar:/users/akim/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.0.11.jar:/users/akim/.ivy2/cache/com.vmunier/scalajs-scripts_2.12/jars/scalajs-scripts_2.12-1.1.2.jar:/users/akim/.ivy2/cache/com.typesafe.play/twirl-api_2.12/jars/twirl-api_2.12-1.3.15.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-guice_2.12/jars/play-guice_2.12-2.6.12.jar:/users/akim/.ivy2/cache/com.google.inject/guice/jars/guice-4.1.0.jar:/users/akim/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/users/akim/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-slick_2.12/jars/play-slick_2.12-3.0.3.jar:/users/akim/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/bundles/slick-hikaricp_2.12-3.2.1.jar:/users/akim/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/jars/play-jdbc-api_2.12-2.6.5.jar:/users/akim/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.6.jar:/users/akim/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/jars/slick-codegen_2.12-3.2.3.jar:/users/akim/.ivy2/cache/com.typesafe.slick/slick_2.12/bundles/slick_2.12-3.2.3.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-test_2.12/jars/play-test_2.12-2.6.12.jar:/users/akim/.ivy2/cache/junit/junit/jars/junit-4.12.jar:/users/akim/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar:/users/akim/.ivy2/cache/com.novocode/junit-interface/jars/junit-interface-0.11.jar:/users/akim/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar:/users/akim/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.2.jar:/users/akim/.ivy2/cache/org.fluentlenium/fluentlenium-core/jars/fluentlenium-core-3.3.0.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-support/jars/selenium-support-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-api/jars/selenium-api-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/jars/selenium-remote-driver-3.5.3.jar:/users/akim/.ivy2/cache/cglib/cglib-nodep/jars/cglib-nodep-3.2.4.jar:/users/akim/.ivy2/cache/org.apache.commons/commons-exec/jars/commons-exec-1.3.jar:/users/akim/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar:/users/akim/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.0.jar:/users/akim/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.3.jar:/users/akim/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.6.jar:/users/akim/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar:/users/akim/.ivy2/cache/net.java.dev.jna/jna-platform/jars/jna-platform-4.1.0.jar:/users/akim/.ivy2/cache/org.atteo.classindex/classindex/jars/classindex-3.4.jar:/users/akim/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.5.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/htmlunit-driver/jars/htmlunit-driver-2.27.jar:/users/akim/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/jars/htmlunit-2.27.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/xercesImpl.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/xml-apis.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/serializer.jar:/users/akim/.ivy2/cache/xalan/xalan/jars/xalan-2.7.2.jar:/users/akim/.ivy2/cache/xalan/serializer/jars/xml-apis.jar:/users/akim/.ivy2/cache/xalan/serializer/jars/serializer-2.7.2.jar:/users/akim/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.5.3.jar:/users/akim/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/jars/htmlunit-core-js-2.27.jar:/users/akim/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/jars/neko-htmlunit-2.27.jar:/users/akim/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/users/akim/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/users/akim/.ivy2/cache/net.sourceforge.cssparser/cssparser/jars/cssparser-0.9.23.jar:/users/akim/.ivy2/cache/org.w3c.css/sac/jars/sac-1.3.jar:/users/akim/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/jars/websocket-client-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-client/jars/jetty-client-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/jars/websocket-common-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/jars/websocket-api-9.4.5.v20170502.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/jars/selenium-firefox-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.scalatestplus.play/scalatestplus-play_2.12/jars/scalatestplus-play_2.12-3.1.2.jar:/users/akim/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.4.jar:/users/akim/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.4.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-java/jars/selenium-java-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-chrome-driver/jars/selenium-chrome-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-edge-driver/jars/selenium-edge-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-ie-driver/jars/selenium-ie-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-opera-driver/jars/selenium-opera-driver-3.5.3.jar:/users/akim/.ivy2/cache/org.seleniumhq.selenium/selenium-safari-driver/jars/selenium-safari-driver-3.5.3.jar:/users/akim/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar:/users/akim/.ivy2/cache/com.codeborne/phantomjsdriver/jars/phantomjsdriver-1.4.3.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws_2.12/jars/play-ws_2.12-2.6.5.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/jars/play-ws-standalone_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/jars/play-ws-standalone-xml_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/jars/play-ws-standalone-json_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/jars/play-ahc-ws_2.12-2.6.5.jar:/users/akim/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/jars/play-ahc-ws-standalone_2.12-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/jars/cachecontrol_2.12-1.1.2.jar:/users/akim/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/users/akim/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/jars/shaded-asynchttpclient-1.1.0.jar:/users/akim/.ivy2/cache/com.typesafe.play/shaded-oauth/jars/shaded-oauth-1.1.0.jar:/users/akim/.ivy2/cache/javax.cache/cache-api/jars/cache-api-1.0.0.jar -bootclasspath /usr/local/eclipse/plugins/org.scala-lang.scala-library_2.12.2.v20170412-161608-VFINAL-21d12e9.jar -unchecked -javaextdirs  
+
+  last tree to typer: TypeTree(class routes)
+       tree position: line 9 of /users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/target/scala-2.12/routes/main/controllers/routes.java
+            tree tpe: controllers.routes
+              symbol: class routes in package controllers
+   symbol definition: class routes extends Object (a ClassSymbol)
+      symbol package: controllers
+       symbol owners: class routes
+           call site: constructor routes in class routes in package controllers
+
+== Source file context for tree position ==
+
+     6 
+     7 import router.RoutesPrefix;
+     8 
+     9 public class routes {
+    10   
+    11   public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());
+    12   public static final controllers.ReverseBookController BookController = new controllers.ReverseBookController(RoutesPrefix.byNamePrefix());
+	at scala.tools.nsc.backend.jvm.BytecodeWriters$ClassBytecodeWriter.writeClass(BytecodeWriters.scala:120)
+	at scala.tools.nsc.backend.jvm.BytecodeWriters$ClassBytecodeWriter.writeClass$(BytecodeWriters.scala:118)
+	at scala.tools.nsc.backend.jvm.BytecodeWriters$$anon$4.writeClass(BytecodeWriters.scala:47)
+	at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.sendToDisk$1(GenBCode.scala:408)
+	at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.drainQ3(GenBCode.scala:428)
+	at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.buildAndSendToDisk(GenBCode.scala:387)
+	at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.run(GenBCode.scala:350)
+	at scala.tools.nsc.Global$Run.compileUnitsInternal(Global.scala:1427)
+	at scala.tools.nsc.Global$Run.compileUnits(Global.scala:1412)
+	at scala.tools.nsc.Global$Run.compileSources(Global.scala:1407)
+	at scala.tools.nsc.Global$Run.compile(Global.scala:1501)
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:126)
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:105)
+	at xsbt.CompilerInterface.run(CompilerInterface.scala:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sbt.internal.inc.AnalyzingCompiler.call(AnalyzingCompiler.scala:259)
+	at sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:132)
+	at sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:111)
+	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$3(MixedAnalyzingCompiler.scala:79)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at sbt.internal.inc.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:130)
+	at sbt.internal.inc.MixedAnalyzingCompiler.compileScala$1(MixedAnalyzingCompiler.scala:70)
+	at sbt.internal.inc.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:113)
+	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1(IncrementalCompilerImpl.scala:288)
+	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1$adapted(IncrementalCompilerImpl.scala:288)
+	at sbt.internal.inc.Incremental$.doCompile(Incremental.scala:90)
+	at sbt.internal.inc.Incremental$.$anonfun$compile$4(Incremental.scala:74)
+	at sbt.internal.inc.IncrementalCommon.recompileClasses(IncrementalCommon.scala:80)
+	at sbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:47)
+	at sbt.internal.inc.Incremental$.$anonfun$compile$3(Incremental.scala:74)
+	at sbt.internal.inc.Incremental$.manageClassfiles(Incremental.scala:117)
+	at sbt.internal.inc.Incremental$.compile(Incremental.scala:72)
+	at sbt.internal.inc.IncrementalCompile$.apply(Compile.scala:65)
+	at sbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:288)
+	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:252)
+	at sbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:156)
+	at sbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:235)
+	at sbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:143)
+	at org.scalaide.core.internal.builder.zinc.CachingCompiler.compile(CachingCompiler.scala:54)
+	at org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.aggressiveCompile(EclipseSbtBuildManager.scala:213)
+	at org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.runCompiler(EclipseSbtBuildManager.scala:146)
+	at org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.update(EclipseSbtBuildManager.scala:128)
+	at org.scalaide.core.internal.builder.zinc.EclipseSbtBuildManager.build(EclipseSbtBuildManager.scala:84)
+	at org.scalaide.core.internal.project.scopes.BuildScopeUnit.build(BuildScopeUnit.scala:72)
+	at org.scalaide.core.internal.project.SbtScopesBuildManager.$anonfun$build$3(SbtScopesBuildManager.scala:53)
+	at org.scalaide.core.internal.project.SbtScopesBuildManager.$anonfun$build$3$adapted(SbtScopesBuildManager.scala:50)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at org.scalaide.core.internal.project.SbtScopesBuildManager.build(SbtScopesBuildManager.scala:50)
+	at org.scalaide.core.internal.project.ScalaProject.build(ScalaProject.scala:596)
+	at org.scalaide.core.internal.builder.ScalaBuilder.build(ScalaBuilder.scala:111)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2018-05-07 00:10:03,158  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:10:03,159  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:10:03,162  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-07 00:10:03,162  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-07 00:10:17,030  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-client has platform default sourceLevel.
+2018-05-07 00:10:17,030  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-client runs on platform default installation.
+2018-05-07 00:59:43,617 ERROR [Worker-7] - EclipseSbtBuildManager - ## Exception when compiling 0 sources to [/users/akim/Local/HTML-Documents/Meowder2/web-apps-project-s18-datingapp/CSCI3345-S18/server/bin]
+Could no2018-05-07 01:01:56,405 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:01:56,405 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:01:56,405 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:05:12,951 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:05:12,951 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:05:12,951 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:05:17,413 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:05:17,413 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:05:17,413 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:13:38,598 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:13:38,599 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:15:28,201 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:15:28,201 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 01:15:28,201 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:20:03,817 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:20:03,818 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:20:03,818 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:33:33,501 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:33:33,501 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:33:33,501 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:48:56,495 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:48:56,496 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:48:56,496 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:51:57,157 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:51:57,157 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 02:51:57,157 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:04:55,926 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:04:55,927 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:04:55,927 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:05:10,894 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:05:10,894 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:05:10,894 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:05,070 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:05,071 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:05,071 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,836 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:15:18,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,849 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,849 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,849 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,849 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,850 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,851 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,852 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:19:42,853 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:30:20,099  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-07 03:30:24,451 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:30:24,451 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:30:24,451 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:30:41,794 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:30:41,794 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:30:41,794 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:31:56,758 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:31:56,768 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:31:56,768 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:31:56,768 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:32:22,052 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:32:22,052 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:32:22,052 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:32:26,554 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:32:26,554 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:32:26,554 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:33:01,559 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:33:01,559 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:33:01,559 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:33:28,182  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-07 03:43:56,552 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-07 03:43:56,553 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException

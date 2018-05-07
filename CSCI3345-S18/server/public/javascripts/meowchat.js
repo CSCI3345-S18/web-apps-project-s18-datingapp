@@ -11,12 +11,14 @@ socket.addEventListener('message', function (event) {
     const elem = document.getElementById("messages");
     const newP = document.createElement("p");
     newP.innerHTML = event.data;
+    console.log(event.data + "This is the new message");
     elem.prepend(newP);
 });
 
 const textInput = document.getElementById("input");
 textInput.addEventListener("keyup", (event) => {
 	if(event.keyCode === 13) {
+		console.log("Msg sent");
 		socket.send(textInput.value);
 		textInput.value = "";
 	}

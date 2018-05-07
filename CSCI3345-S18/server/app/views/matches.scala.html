@@ -13,7 +13,7 @@
 						<input type="submit" name="catInfo" value="View Cat Info">
 						}
 					</td>
-					<td>@helper.form(action = helper.CSRF(routes.MeowderChatController.createChatPage(m.userone, m.usertwo))) {
+					<td>@helper.form(action = helper.CSRF(routes.MeowderChatController.initialLoad(m.userone, m.usertwo))) {
 						<input type="submit" name="chat" value="Chat">
 						}
 					</td>
@@ -24,7 +24,7 @@
 							<input type="submit" name="catInfo" value="View Cat Info">
 							}
 						</td>
-						<td>@helper.form(action = helper.CSRF(routes.MeowderChatController.createChatPage(m.usertwo, m.userone))) {
+						<td>@helper.form(action = helper.CSRF(routes.MeowderChatController.initialLoad(m.usertwo, m.userone))) {
 						<input type="submit" name="chat" value="Chat">
 						}
 					</td>

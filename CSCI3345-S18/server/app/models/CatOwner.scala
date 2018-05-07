@@ -130,7 +130,9 @@ object MeowderQueries {
   
   def allMessages(sender: String, receiver: String, db: Database)(implicit ex: ExecutionContext): Future[Seq[Chat]] = {
     db.run {
-      chats.filter(c => c.sender === sender && c.receiver === receiver).result
+      chats.filter( c => 
+        c.sender === sender && c.receiver === receiver|| 
+        c.receiver === sender && c.sender === receiver).result
     }
   }
 }

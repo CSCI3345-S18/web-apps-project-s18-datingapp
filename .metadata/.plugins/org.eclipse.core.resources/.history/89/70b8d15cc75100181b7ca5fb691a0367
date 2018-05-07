@@ -1,0 +1,96 @@
+@* datingApp Template File *@
+@(sender: String, receiver: String, messages: Seq[Chat], msgForm: Form[NewChat])(implicit request: RequestHeader, flash: Flash, messagesProvider: MessagesProvider)
+
+@* datingApp Template File *@
+
+<head>
+	<title>Meowder Chat</title>
+	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/datingchat.css")">
+</head>
+
+@main("Dating Chat") {
+	<body>
+	 <div class="container">
+      
+      <div class="header clearfix">
+          <h4>Matched Username</h4>
+      </div>
+    
+    <div class="live-chat">		
+      
+      <div class="chat match">
+        <div class="chat-message-content clearfix">
+          <p> this is 1st message</p>          
+        </div>
+      </div>
+           
+      <div class="chat me">
+        <div class="chat-message-content clearfix">
+          <p> Hello! (2nd message)</p>
+        </div>
+      </div>
+        
+        
+      <div class="chat match">
+        <div class="chat-message-content clearfix">
+          <p> hows it goin</p>          
+        </div>
+      </div>
+
+
+      <div class="chat me">
+          <div class="chat-message-content clearfix">
+            <p> not much (4th message)</p>
+          </div>
+      </div>
+      
+      
+      <div class="chat match">
+        <div class="chat-message-content clearfix">
+          <p> cool beans and this is a really really really long message wooooooohooo</p>          
+        </div>
+      </div>
+      
+    
+
+      @for(m <- messages) {
+			@if(m.sender == Option(sender)) { 
+			
+				<div class="chat me">
+          			<div class="chat-message-content clearfix">
+            			<p>@m.message</p>
+            		</div>
+            	</div>
+			}
+			@if(m.receiver == Option(receiver)) { 
+			
+				<div class="chat match">
+          			<div class="chat-message-content clearfix">
+            			<p>@m.message</p>
+            		</div>
+            	</div>
+			}
+			
+	}
+    </div> <!--live chat close-->
+	
+	
+
+	<div id="messages"></div>
+		@helper.form(action=helper.CSRF(routes.MeowderChatController.addChat(sender, receiver))) {
+    		<input type="hidden" name="id" value="0">
+    		<input type="hidden" name="sender" value="@sender">
+    		<input type="hidden" name="receiver" value="@receiver">
+    		<input type="hidden" name="startDate" value=null>
+    		<input type="text" name="message" id="input">
+    	}    
+    	                                                   
+	
+	</div><!--container close-->
+
+</body> <!--body close-->
+
+}
+<script src="@routes.Assets.versioned("javascripts/meowchat.js")" type="text/javascript"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</script>-->
+  
