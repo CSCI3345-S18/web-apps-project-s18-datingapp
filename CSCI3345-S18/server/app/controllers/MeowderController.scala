@@ -254,7 +254,7 @@ class MeowderController @Inject() (
     val getMatchesFuture = MeowderQueries.viewMatches(email, db)
     getMatchesFuture.map { matches =>
       if (matches.nonEmpty == true) {
-        Ok(views.html.matches(email, matches.distinct)) 
+        Ok(views.html.matches(email, matches.distinct)).withSession("connection" -> username) 
       }
       else Redirect(routes.MeowderController.profile(username, email)).flashing("error" -> "You currently don't have any matches.")
     }

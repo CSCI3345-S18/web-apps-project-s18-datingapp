@@ -4,7 +4,6 @@ import slick.jdbc.MySQLProfile.api._
 import scala.concurrent.ExecutionContext
 import scala.concurrent.Future
 import controllers.NewChat
-import controllers.NewMessage
 import controllers.NewUser
 import controllers.NewCat
 
@@ -12,8 +11,8 @@ import controllers.NewCat
 case class User(username: String, email:String, password:String, sexuality:Option[String], gender:Option[String], catFact:Option[String])
 case class Cat(catname:String, ownername:String, owneremail: String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
-case class Chat(id: Int, sender: String, receiver:String, startDate: String)
-case class ChatMessage(id: Int, chatid: Int, message: String, dateTime: String)
+case class Chat(id: Int, sender: String, receiver:String, startDate: String, message: String)
+
 
 
 /**
@@ -126,22 +125,18 @@ object MeowderQueries {
     }
   }
   
-  def addChat(nc: NewChat, db: Database)(implicit ex:ExecutionContext):Future[Int] = {
+  def addMessage(nc: NewChat, db: Database)(implicit ex:ExecutionContext):Future[Int] = {
     db.run {
-      chats += Chat(nc.id, nc.sender, nc.receiver, nc.startDate)
+      chats += Chat(nc.id, nc.sender, nc.receiver, nc.startDate, nc.message)
     }
   }
   
-  def allMessages(db: Database)(implicit ex: ExecutionContext): Future[Seq[ChatMessage]] = {
-    db.run(chatmessages.result);
-  }
-  
-  def addMessage(nm: NewMessage, db: Database)(implicit ex: ExecutionContext): Future[Int] = {
+  def allMessages(sender: String, receiver: String, db: Database)(implicit ex: ExecutionContext): Future[Seq[Chat]] = {
     db.run {
-      chatmessages += ChatMessage(nm.id, nm.chatid, nm.message, nm.dateTime)
+      chats.filter(c => c.sender === sender && c.receiver === receiver).result
     }
   }
-  
+
   
   
   

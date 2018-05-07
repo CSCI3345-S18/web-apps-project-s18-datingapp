@@ -49,19 +49,12 @@ object Tables {
     def sender = column[String]("sender")
     def receiver = column[String]("receiver")
     def startDate = column[String]("startDate")
-    def * = (id, sender, receiver, startDate) <> (Chat.tupled, Chat.unapply)   
+    def message = column[String]("message")
+    def * = (id, sender, receiver, startDate, message) <> (Chat.tupled, Chat.unapply)   
   }
   val chats = TableQuery[Chats]
   
-  
-  class ChatMessages(tag: Tag) extends Table[ChatMessage](tag, "chat_message") {
-    def id = column[Int]("id")
-    def chatid = column[Int]("chatid")
-    def message = column[String]("message")
-    def dateTime = column[String]("dateTime")
-    def * = (id, chatid, message, dateTime) <> (ChatMessage.tupled, ChatMessage.unapply)
-  }
-  val chatmessages = TableQuery[ChatMessages]
+
   
   
   

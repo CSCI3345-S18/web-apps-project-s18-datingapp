@@ -1,4 +1,4 @@
-@(user: String, chats: Seq[Chat], chatForm :Form[NewChat])(implicit request: MessagesRequestHeader, flash: Flash)
+@(sender: String, receiver: String, messages: Seq[Chat], msgForm: Form[NewChat])(implicit request: MessagesRequestHeader, flash: Flash)
 
 @* datingApp Template File *@
 
@@ -65,14 +65,17 @@
       
     </div> <!--live chat close-->
 
-    <textarea name="text" id="input" rows="1" wrap="soft" maxlength="40" placeholder="Enter message here..."></textarea>
-    <input type="submit" value="Send Message" display="none"> 
-                                                          
+	<form id="chat-form" action="@routes.MeowderChatController.createChatPage(sender, receiver)" method="POST">
+		@helper.CSRF.formField
+    	<textarea name="text" id="input" rows="1" wrap="soft" maxlength="40" placeholder="Enter message here..."></textarea>
+    	<input type="submit" value="Send Message" display="none">        
+    </form>                                                   
+	
 	</div><!--container close-->
 
 </body> <!--body close-->
 
 }
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</script>-->
   <script src="@routes.Assets.versioned("javascripts/meowchat.js")" type="text/javascript"></script>
  

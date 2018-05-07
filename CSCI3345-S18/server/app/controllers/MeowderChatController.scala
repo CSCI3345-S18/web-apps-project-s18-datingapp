@@ -35,8 +35,8 @@ import play.api.data.Forms._
 import scala.concurrent.Future
 import Console._
 
-case class NewChat(id: Int, sender: String, receiver: String, startDate: String)
-case class NewMessage(id: Int, chatid: Int, message: String, dateTime: String)
+case class NewChat(id: Int, sender: String, receiver: String, startDate: String, message: String)
+//case class NewMessage(id: Int, chatid: Int, message: String, dateTime: String)
 
 @Singleton
 class MeowderChatController @Inject() (
@@ -51,39 +51,58 @@ class MeowderChatController @Inject() (
       "id" -> number,
       "sender" -> nonEmptyText,
       "receiver" -> nonEmptyText,
-      "startDate" -> nonEmptyText)(NewChat.apply)(NewChat.unapply))
-  
+      "startDate" -> nonEmptyText,
+      "message" -> nonEmptyText)(NewChat.apply)(NewChat.unapply))
+ /* 
   val messageForm = Form(mapping(
       "id" -> number,
       "chatid" -> number,
       "message" -> nonEmptyText,
       "dateTime" -> nonEmptyText)(NewMessage.apply)(NewMessage.unapply))
-  
+  */
   def socket = WebSocket.accept[String, String] { request =>
     ActorFlow.actorRef { out =>
       WSChatActor.props(out, wsManager)
     }
   }
   
-  def createChatPage = Action.async { implicit request =>
+  /*
+  def createChatPage(sender: String, receiver: String) = Action.async { implicit request =>
     request.session.get("connection").map { user =>
-      MeowderQueries.getChats(user, db).map(chat => Ok(views.html.datingChat(user, chats, newChatForm)))
+      MeowderQueries.addChat(, db).map(chat => Ok(views.html.datingChat(user, chat, newChatForm)))
     }.get
   }
   
   
   
-  def addChat(sender: String, receiver: String) = Action.async { implicit request =>
-    newChatForm.bindFromRequest().fold(
+  def addMessage = Action.async { implicit request =>
+    messageForm.bindFromRequest().fold(
         formWithErrors => {
-          val Future = MeowderQueries.allChats(db)
-          Future.map(chats => BadRequest(views.html.datingChat(sender,chats, formWithErrors)))
+          val Future = MeowderQueries.allMessages(db)
+          Future.map(chats => BadRequest(views.html.datingChat(sender,messages, formWithErrors)))
         },
-        newChat => {
-          val addFuture = MeowderQueries.addChat(newChat, db)
+        newMsg => {
+          val addFuture = MeowderQueries.addMessage(newMsg, db)
           addFuture.map { cnt =>
             if(cnt == 1) Redirect(routes.MeowderChatController.createChatPage).withSession("connection" -> sender)
             else Redirect(routes.MeowderChatController.createChatPage).flashing("error" -> "Error creating task")
+          }
+        })
+  }
+  */
+  
+  def createChatPage(sender: String, receiver: String) = Action.async { implicit request =>
+    newChatForm.bindFromRequest().fold(
+        formWithErrors => {         
+          val Future = MeowderQueries.allChats(db)
+          Future.map(messages => BadRequest(views.html.datingChat(sender, receiver, messages, formWithErrors)))
+        },
+        newMsg => {
+          Console.println("creating chat page")
+          val msgFuture = MeowderQueries.allMessages(sender, receiver, db)
+          msgFuture.map { cnt =>
+            if(cnt.nonEmpty == true) Ok(views.html.datingChat(sender, receiver, cnt, newChatForm))
+            else Ok(views.html.datingChat(sender, receiver, cnt, newChatForm)).flashing("error" -> "Error creating msg")
           }
         })
   }
