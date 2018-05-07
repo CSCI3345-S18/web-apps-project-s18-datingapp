@@ -106,8 +106,6 @@ POST	/viewMatches				controllers.MeowderController.viewMatches(username: String,
 POST	/chat						controllers.MeowderChatController.initialLoad(sender: String, receiver: String)
 GET 	/addchat					controllers.MeowderChatController.createChatPage(sender: String, receiver: String)
 POST	/addchat					controllers.MeowderChatController.addChat(sender: String, receiver: String)
-
-
 		
 
 GET		/chatsocket					controllers.MeowderChatController.socket

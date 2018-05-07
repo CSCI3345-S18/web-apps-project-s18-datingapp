@@ -7,13 +7,14 @@
 </head>
 
 @main("Login") {
-<h1>Sign in to your account!</h1>
-<br><br>
-@helper.form(action = helper.CSRF(routes.MeowderController.verify)) {
-	  @helper.inputText(userForm("username"))
-	  @helper.inputText(userForm("email"))
-	  @helper.inputPassword(userForm("password"))
-	  <input type="submit" value="Submit">
-	}
-	
+	<body>
+		<h1>Sign in to your account!</h1>
+		<br><br>
+		@helper.form(action = helper.CSRF(routes.MeowderController.verify)) {
+	  		@helper.inputText(userForm("username"))
+	  		@helper.inputText(userForm("email"))
+	  		@helper.inputPassword(userForm("password"))
+	  		<input type="submit" value="Login">
+		}
+	</body>
 }

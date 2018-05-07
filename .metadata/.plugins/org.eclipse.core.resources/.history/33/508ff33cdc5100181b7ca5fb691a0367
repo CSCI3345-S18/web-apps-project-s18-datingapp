@@ -1,0 +1,20 @@
+@* meowderLogin Template File *@
+@(userForm :Form[Login])(implicit request: MessagesRequestHeader, flash:Flash)
+
+<head>
+	<title>Create Account</title>
+	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/createAccount.css")">
+</head>
+
+@main("Login") {
+<body>
+<h1>Sign in to your account!</h1>
+<br><br>
+@helper.form(action = helper.CSRF(routes.MeowderController.verify)) {
+	  @helper.inputText(userForm("username"))
+	  @helper.inputText(userForm("email"))
+	  @helper.inputPassword(userForm("password"))
+	  <input type="submit" value="Submit">
+	}
+	</body>
+}
