@@ -37,69 +37,73 @@ case class MatchUsers(userone: String, usertwo: String)
 
 
 
+
+
+//comment
+
 @Singleton
 class MeowderController @Inject() (
   protected val dbConfigProvider: DatabaseConfigProvider,
   mcc: MessagesControllerComponents)(implicit ec: ExecutionContext)
   extends MessagesAbstractController(mcc) with HasDatabaseConfigProvider[JdbcProfile] {
- 
+
   val newUserForm = Form(mapping(
     "username" -> nonEmptyText,
     "email" -> nonEmptyText,
     "password" -> nonEmptyText)(NewUser.apply)(NewUser.unapply))
-    
+
   val newCatForm = Form(mapping(
     "catname" -> nonEmptyText,
     "ownername" -> nonEmptyText,
     "owneremail" -> nonEmptyText,
     "breed" -> nonEmptyText,
     "gender" -> nonEmptyText)(NewCat.apply)(NewCat.unapply))
-    
+
   val loginForm = Form(mapping(
     "username" -> nonEmptyText,
     "email" -> nonEmptyText,
     "password" -> nonEmptyText,
     )(Login.apply)(Login.unapply))
-    
+
   val ageForm = Form(mapping(
         "month" -> number(min = 1, max = 12),
         "day" -> number(min = 1, max = 31),
         "year" -> number(min = 0, max = 2000)
     )(AgeCheck.apply)(AgeCheck.unapply))
-    
+
   val profileForm = Form(mapping(
       "catFact" -> nonEmptyText)(Profile.apply)(Profile.unapply))
-   
+
   val matchUsersForm = Form(mapping(
       "userone" -> nonEmptyText,
       "usertwo" -> nonEmptyText)(MatchUsers.apply)(MatchUsers.unapply))
-      
+
   def datingSite = Action { implicit request =>
     Ok(views.html.datingApp())
   }
-  
+
   def almostDone = Action { implicit request =>
     Ok(views.html.almostDone(ageForm))
   }
-  
+
   def createAccount = Action { implicit request =>
     Ok(views.html.createAccount(newUserForm))
   }
-  
+
   def login = Action { implicit request =>
     Console.println("Sign in button clicked")
     Ok(views.html.meowderLogin((loginForm)))
   }
-  
+
   def catFeed(email: String) = Action.async { implicit request =>
     val feedFuture = MeowderQueries.allFacts(db)
     feedFuture.map(facts => Ok(views.html.catFeed(email, facts, matchUsersForm)))
   }
-  
+
   def profile(username: String, email: String) = Action { implicit request =>
     Ok(views.html.profile(username, email, profileForm, newCatForm))
   }
-  
+
   //[TODO] Need to edit almostDone so it'll keep FirstName and transfer it to createAccount Pagr
   def addUser = Action.async { implicit request =>
     Console.println("inside addUser")
@@ -118,7 +122,7 @@ class MeowderController @Inject() (
         }
       })
   }
-  
+
   def verify() = Action.async { implicit request =>
     Console.println("inside login")
     loginForm.bindFromRequest().fold(
@@ -140,7 +144,7 @@ class MeowderController @Inject() (
         }
       })
    }
-  
+
   def ageCheck = Action.async { implicit request =>
     Console.println("inside agecheck")
     ageForm.bindFromRequest().fold(
@@ -158,7 +162,7 @@ class MeowderController @Inject() (
           }
       })
   }
-  
+
   def addFact(username: String, email: String) = Action.async { implicit request =>
     profileForm.bindFromRequest().fold(
         formWithErrors => {
@@ -176,7 +180,7 @@ class MeowderController @Inject() (
 
   def addCatInfo(username: String, email: String) = Action.async { implicit request =>
     newCatForm.bindFromRequest().fold(
-        formWithErrors => { 
+        formWithErrors => {
           Console.println("cat info error")
           val Future = MeowderQueries.allCats(username, db)
           Future.map(cats => BadRequest(views.html.profile(username,email, profileForm, formWithErrors)))
@@ -189,17 +193,17 @@ class MeowderController @Inject() (
           }
         })
   }
-  
+
   def listCatInfo(emailone: String, emailtwo: String) = Action.async { implicit request =>
     val viewFuture = MeowderQueries.findCatInfoByEmail(emailtwo, db)
     viewFuture.map { info =>
       if(info.nonEmpty == true) Ok(views.html.catInfo(info))
       else Ok(views.html.catInfo(info))
     }
-        
+
   }
-  
-  def likeFact(userone: String, usertwo: String) = Action.async { implicit request => 
+
+  def likeFact(userone: String, usertwo: String) = Action.async { implicit request =>
     matchUsersForm.bindFromRequest().fold(
         formWithErrors => {
           val Future = MeowderQueries.allFacts(db)
@@ -214,7 +218,7 @@ class MeowderController @Inject() (
             }
           } else {
             val likeFuture = MeowderQueries.isLiked(usertwo, userone, db)
-            likeFuture.map { isliked => 
+            likeFuture.map { isliked =>
               if (isliked.nonEmpty == true) {
                 Console.println("liked")
                 Redirect(routes.MeowderController.updateMatch(usertwo, userone))
@@ -223,25 +227,25 @@ class MeowderController @Inject() (
                 alreadyLikeFuture.map { alreadyLiked =>
                   if(alreadyLiked.nonEmpty == true) {
                     Redirect(routes.MeowderController.catFeed(userone))
-                  } 
+                  }
                 }
                 Redirect(routes.MeowderController.addMatch(userone, usertwo))
               }
-            
+
              }
-            
+
           }
         })
   }
-  
-  def updateMatch(userone: String, usertwo: String) = Action.async { implicit request => 
+
+  def updateMatch(userone: String, usertwo: String) = Action.async { implicit request =>
     val updateFuture = MeowderQueries.updateMatch(userone, usertwo, db)
     updateFuture.map { updated =>
       if (updated == 1) Redirect(routes.MeowderController.catFeed(userone))
       else Redirect(routes.MeowderController.catFeed(userone))
     }
   }
-  
+
   def addMatch(userone: String, usertwo: String) = Action.async { implicit request =>
     val addFuture = MeowderQueries.addMatch(userone, usertwo, db)
     addFuture.map { matched =>
@@ -249,12 +253,12 @@ class MeowderController @Inject() (
       else Redirect(routes.MeowderController.catFeed(userone))
     }
   }
-  
+
   def viewMatches(username: String, email: String) = Action.async { implicit request =>
     val getMatchesFuture = MeowderQueries.viewMatches(email, db)
     getMatchesFuture.map { matches =>
       if (matches.nonEmpty == true) {
-        Ok(views.html.matches(email, matches.distinct)).withSession("connection" -> username) 
+        Ok(views.html.matches(email, matches.distinct)).withSession("connection" -> username)
       }
       else Redirect(routes.MeowderController.profile(username, email)).flashing("error" -> "You currently don't have any matches.")
     }
