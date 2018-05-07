@@ -27,7 +27,7 @@ import Console._
 
 //case class NewUser(username: String, password:String, sexuality:String, gender:String, catFact:String)
 case class NewUser(username: String, email: String, password:String)
-case class NewCat(catname:String, ownername:String, breed:String, gender:String)
+case class NewCat(catname:String, ownername:String, owneremail: String, breed:String, gender:String)
 case class Login(username: String, email:String, password:String)
 case class AgeCheck(month: Int, day:Int, year:Int)
 case class Profile(catFact: String)
@@ -47,6 +47,7 @@ class MeowderController @Inject() (
   val newCatForm = Form(mapping(
     "catname" -> nonEmptyText,
     "ownername" -> nonEmptyText,
+    "owneremail" -> nonEmptyText,
     "breed" -> nonEmptyText,
     "gender" -> nonEmptyText)(NewCat.apply)(NewCat.unapply))
     
@@ -186,6 +187,25 @@ class MeowderController @Inject() (
         })
   }
   
+  def listCatInfo(emailone: String, emailtwo: String) = Action.async { implicit request =>
+    newCatForm.bindFromRequest().fold(
+        formWithErrors => {
+          val Future = MeowderQueries.viewMatches(emailone, db)
+          Future.map(cats => BadRequest(views.html.matches(emailone, cats)))
+        },
+        viewCatInfo => {
+          val viewFuture = MeowderQueries.findCatInfoByEmail(emailtwo, db)
+          viewFuture.map { info =>
+            if(info.nonEmpty == true) Ok(views.html.catInfo(info))
+            else Ok(views.html.catInfo(info))
+          }
+        })
+  }
+  
+ /* def viewCatInfo(emailtwo: String) = Action.async { implicit request =>
+    Ok(views.html.catInfo(cats))
+  }*/
+  
   def likeFact(userone: String, usertwo: String) = Action.async { implicit request => 
     matchUsersForm.bindFromRequest().fold(
         formWithErrors => {
@@ -234,6 +254,16 @@ class MeowderController @Inject() (
     addFuture.map { matched =>
       if (matched == 1) Redirect(routes.MeowderController.catFeed(userone))
       else Redirect(routes.MeowderController.catFeed(userone))
+    }
+  }
+  
+  def viewMatches(username: String, email: String) = Action.async { implicit request =>
+    val getMatchesFuture = MeowderQueries.viewMatches(email, db)
+    getMatchesFuture.map { matches =>
+      if (matches.nonEmpty == true) {
+        Ok(views.html.matches(email, matches.distinct)) 
+      }
+      else Redirect(routes.MeowderController.profile(username, email)).flashing("error" -> "You currently don't have any matches.")
     }
   }
 }

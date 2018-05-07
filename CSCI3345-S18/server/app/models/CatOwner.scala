@@ -7,7 +7,7 @@ import controllers.NewUser
 import controllers.NewCat
 
 case class User(username: String, email:String, password:String, sexuality:Option[String], gender:Option[String], catFact:Option[String])
-case class Cat(catname:String, ownername:String, breed:String, gender:String)
+case class Cat(catname:String, ownername:String, owneremail: String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
 
 /**
@@ -42,7 +42,7 @@ object MeowderQueries {
   
   def addCat(nc: NewCat, db: Database)(implicit ec:ExecutionContext): Future[Int] = {
     db.run {
-      cats += Cat(nc.catname, nc.ownername, nc.breed, nc.gender)
+      cats += Cat(nc.catname, nc.ownername, nc.owneremail, nc.breed, nc.gender)
     }
   }
   
@@ -75,6 +75,20 @@ object MeowderQueries {
       matches.filter(m => 
         (m.userone === userone && m.usertwo === usertwo && m.status === 1) || 
         (m.userone === usertwo && m.usertwo === userone && m.status === 1)).result.headOption
+    }
+  }
+  
+  def findCatInfoByEmail(email: String, db: Database)(implicit ex:ExecutionContext):Future[Seq[Cat]] = {
+    db.run {
+      cats.filter(u => u.owneremail === email).result
+    }
+  }
+  
+  def viewMatches(email: String, db: Database)(implicit ex:ExecutionContext): Future[Seq[Matched]] = {
+    db.run {
+      matches.filter(m => 
+        (m.userone === email && m.status === 1)||
+        (m.usertwo === email && m.status === 1)).result
     }
   }
   

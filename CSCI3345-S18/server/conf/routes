@@ -92,14 +92,17 @@ POST	/catFeed					controllers.MeowderController.catFeed(email: String)
 
 GET		/catFeed					controllers.MeowderController.catFeed(email: String)
 
+POST	/catInfo					controllers.MeowderController.listCatInfo(emailone: String, emailtwo: String)
+
 POST	/likeFact					controllers.MeowderController.likeFact(userone: String, usertwo: String)
 
 GET		/updateMatch				controllers.MeowderController.updateMatch(userone: String, usertwo: String)
 
 GET		/addMatch					controllers.MeowderController.addMatch(userone: String, usertwo: String)
 
+POST	/viewMatches				controllers.MeowderController.viewMatches(username: String, email: String)
+
 GET		/chat						controllers.MeowderChatController.index
 GET		/chatsocket					controllers.MeowderChatController.socket
-
 
 

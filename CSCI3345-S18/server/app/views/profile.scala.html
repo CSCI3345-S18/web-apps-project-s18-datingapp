@@ -10,13 +10,20 @@
 <h1 id="logo">Meowder</h1>
 <div class="indentation">
 <h2 id="name">@username</h2>
-<button type="button" id="message">Chat With Your Matches!</button><br>
 <div id="catfacts">
-<br><br>
-<h2>Send Your Cat Fact and Information to the Anonymous Feed!</h2>
-<h4>Cat Tip: In order to match with other pawtners, the following information needs to be filled out:</h4>
-<br><br>
 @main("User Profile") {
+
+	@helper.form(action = helper.CSRF(routes.MeowderController.viewMatches(username, email))) {
+		<input type="submit" id="message" value="View Your Matches!"> 
+	}
+	
+	@helper.form(action = helper.CSRF(routes.MeowderController.catFeed(email))) {
+		<input type="submit" id="message" name="goToCatFeed" value="Go To Cat Feed">
+	}<br><br>
+	
+	<h2>Send Your Cat Fact and Information to the Anonymous Feed!</h2>
+	<p>Cat Tip: In order to match with other pawtners, the following information needs to be filled out:</p>
+	<br>
 	@helper.form(action = helper.CSRF(routes.MeowderController.addFact(username, email))) {
 	  @helper.inputText(factForm("catFact"))
 	  <input type="submit" name="loginSubmission" value="Add Cat Fact">
@@ -27,15 +34,9 @@
 	  <input type ="hidden" name="ownername" value="@username">
 	  @helper.inputText(catInfoForm("breed"))
 	  @helper.inputText(catInfoForm("gender"))
-	  <input type="submit" name="catInfo" value="Add Cat Information">
-	  
-	}
-	<br><br>
-	@helper.form(action = helper.CSRF(routes.MeowderController.catFeed(email))) {
-		<input type="submit" name="goToCatFeed" value="Go To Cat Feed">
-	}
+	  <input type="submit" name="catInfo" value="Add Cat Information"> 
+	}<br>
 }
-</div>
 </div>
 </body>
 

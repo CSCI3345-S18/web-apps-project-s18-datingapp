@@ -26,9 +26,10 @@ object Tables {
   class Cats(tag:Tag) extends Table[Cat](tag, "cat"){
     def catname = column[String]("catname")
     def ownername = column[String]("ownername")
+    def owneremail = column[String]("owneremail")
     def breed = column[String]("breed")
     def gender = column[String]("gender")
-    def * = (catname, ownername, breed, gender) <> (Cat.tupled, Cat.unapply)
+    def * = (catname, ownername, owneremail, breed, gender) <> (Cat.tupled, Cat.unapply)
   }
   val cats = TableQuery[Cats]
   
