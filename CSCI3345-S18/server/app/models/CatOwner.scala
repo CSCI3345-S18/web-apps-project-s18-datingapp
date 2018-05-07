@@ -3,12 +3,18 @@ package models
 import slick.jdbc.MySQLProfile.api._
 import scala.concurrent.ExecutionContext
 import scala.concurrent.Future
+import controllers.NewChat
+import controllers.NewMessage
 import controllers.NewUser
 import controllers.NewCat
+
 
 case class User(username: String, email:String, password:String, sexuality:Option[String], gender:Option[String], catFact:Option[String])
 case class Cat(catname:String, ownername:String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
+case class Chat(id: Int, sender: String, receiver:String, startDate: String)
+case class ChatMessage(id: Int, chatid: Int, message: String, dateTime: String)
+
 
 /**
  * Object that I can put some queries in.
@@ -95,4 +101,35 @@ object MeowderQueries {
       users.filter(u => u.email === email).map(_.catFact).update(catFact)
     }
   }
+  
+  def allChats(db: Database)(implicit ec: ExecutionContext): Future[Seq[Chat]] = {
+    db.run(chats.result);
+  }
+  
+  def getChats(username: String, db: Database)(implicit ec: ExecutionContext): Future[Seq[Chat]] = {
+    db.run {
+      chats.filter(_.sender === username).result
+    }
+  }
+  
+  def addChat(nc: NewChat, db: Database)(implicit ex:ExecutionContext):Future[Int] = {
+    db.run {
+      chats += Chat(nc.id, nc.sender, nc.receiver, nc.startDate)
+    }
+  }
+  
+  def allMessages(db: Database)(implicit ex: ExecutionContext): Future[Seq[ChatMessage]] = {
+    db.run(chatmessages.result);
+  }
+  
+  def addMessage(nm: NewMessage, db: Database)(implicit ex: ExecutionContext): Future[Int] = {
+    db.run {
+      chatmessages += ChatMessage(nm.id, nm.chatid, nm.message, nm.dateTime)
+    }
+  }
+  
+  
+  
+  
+  
 }

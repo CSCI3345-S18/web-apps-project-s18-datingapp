@@ -1,9 +1,13 @@
+console.log("setting up meowchat");
+
 // Create WebSocket connection.
 const socket = new WebSocket('ws://'+window.location.hostname+':'+window.location.port+'/socket');
 
+
+
 // Connection opened
 socket.addEventListener('open', function (event) {
-    
+    socket.send('Connected');
 });
 
 // Listen for messages
@@ -19,5 +23,6 @@ textInput.addEventListener("keyup", (event) => {
 	if(event.keyCode === 13) {
 		socket.send(textInput.value);
 		textInput.value = "";
+		
 	}
 });

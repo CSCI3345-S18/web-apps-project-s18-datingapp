@@ -17,3 +17,579 @@
 2018-05-05 16:48:06,454  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
 2018-05-05 16:48:12,500  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
 2018-05-05 16:48:12,501  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 14:34:30,061  WARN [Worker-2] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 14:34:30,062  WARN [Worker-2] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 14:34:42,654  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for MEOWDER-S18-client, setting default to 2.12.
+2018-05-06 14:34:42,658  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for MEOWDER-S18-client, setting default to 2.12.
+2018-05-06 14:34:44,248  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 14:34:44,248  WARN [Worker-0] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 14:34:44,509  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 14:34:44,509  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 14:34:44,645  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 14:34:44,645  WARN [Worker-7] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 15:24:49,989  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:30:32,791  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:30:33,011  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:30:33,223  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:31:21,999  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:31:22,206  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:32:09,145  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:33:08,460 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:33:08,460 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:33:32,736 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:33:32,737 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:33:32,737 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:34:34,579  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:34,786  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:35,011  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:38,402  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:38,633  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:38,899  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:53,732  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:53,936  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:54,139  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:58,522  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:58,786  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:34:58,988  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:35:18,594  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:35:23,821  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:35:24,686  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:35:34,307  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:37:59,647  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:04,278  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:06,648  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:06,914  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:09,490  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:09,752  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:19,235  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:28,036  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:36,619  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:36,820  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:37,020  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:51,111  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:51,377  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:38:51,631  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 15:40:10,088  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:10,090  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:10,600  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:10,600  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:11,111  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:11,111  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:11,620  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:11,620  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:15,629  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:15,629  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:16,139  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:16,139  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:19,149  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:19,149  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:20,265  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:20,265  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:23,826  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:28,333  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:29,846  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 469
+2018-05-06 15:40:46,019  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 546
+2018-05-06 15:40:48,545  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 546
+2018-05-06 15:40:52,069  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 546
+2018-05-06 15:40:59,630 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:40:59,630 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:40:59,630 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:42:23,038  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:23,570  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:24,082  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:24,594  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:25,110  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:25,622  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:26,134  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:42:31,291  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1256
+2018-05-06 15:43:24,986 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:43:24,986 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:43:24,986 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 15:49:34,312  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1337
+2018-05-06 15:49:34,903  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1337
+2018-05-06 15:50:05,376  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1337
+2018-05-06 15:54:28,220  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 16:43:32,219 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 16:43:32,220 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 16:43:32,221 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 16:46:06,076  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:11:02,980 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:11:02,980 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:11:02,980 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:13:12,627  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 17:13:12,628  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 17:13:12,629  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 17:13:12,629  WARN [Worker-11] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 17:13:13,373 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set1.foreach(Set.scala:95)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:20)
+2018-05-06 17:13:13,573  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,573  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,573  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,579  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,774  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,774  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,774  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,779  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:13:13,905 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set4.foreach(Set.scala:206)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:476)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5585)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5701)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5718)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentType(Typers.scala:1516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentTypes(Typers.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1811)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5476)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5624)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$9(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5176)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5479)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5620)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:423)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:416)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1319)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2018-05-06 17:13:13,906 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set4.foreach(Set.scala:206)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:476)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5585)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5701)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5718)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentType(Typers.scala:1516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentTypes(Typers.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1811)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5476)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5624)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$9(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5176)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5479)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5620)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:423)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:416)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1319)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2018-05-06 17:13:13,917 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set4.foreach(Set.scala:206)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:476)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5585)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5701)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5718)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentType(Typers.scala:1516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentTypes(Typers.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1811)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5476)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5624)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$9(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5176)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5479)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5620)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:423)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:416)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1319)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2018-05-06 17:14:23,241 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:14:23,241 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:14:23,241 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:16:58,887 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:16:58,887 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:17:10,231  WARN [scala-execution-context-global-2637] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 17:17:10,232  WARN [scala-execution-context-global-2637] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 17:26:29,393  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:26:29,630  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:26:29,874  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:28:33,156  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 17:30:06,264 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:30:06,265 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 17:30:06,265 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:19:33,868 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:19:33,869 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:19:33,869 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:21:21,803  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 18:28:05,282  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 18:32:37,899 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:32:37,899 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:32:38,152  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 18:49:19,416  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 18:50:19,725  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 18:53:01,805 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,806 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,807 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,808 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:53:01,809 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:56:39,935 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:56:39,936 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 18:56:39,936 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-05-06 19:04:26,312  WARN [Worker-18] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 19:04:26,312  WARN [Worker-18] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 19:04:26,315  WARN [Worker-18] - ScalaProject - Project MEOWDER-S18-shared has platform default sourceLevel.
+2018-05-06 19:04:26,315  WARN [Worker-18] - ScalaProject - Project MEOWDER-S18-shared runs on platform default installation.
+2018-05-06 19:04:27,000 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set1.foreach(Set.scala:95)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:476)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5585)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5701)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5718)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentType(Typers.scala:1516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentTypes(Typers.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1811)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5476)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5624)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$9(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5176)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5479)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5620)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:423)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:416)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1319)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2018-05-06 19:04:27,004 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set1.foreach(Set.scala:95)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:476)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5585)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5701)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5718)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentType(Typers.scala:1516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentTypes(Typers.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1811)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5476)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5624)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$9(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5176)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5479)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5620)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:423)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:416)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1319)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2018-05-06 19:04:27,004 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set1.foreach(Set.scala:95)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:476)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5585)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5701)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTypeConstructor(Typers.scala:5718)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentType(Typers.scala:1516)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedParentTypes(Typers.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1811)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5476)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5624)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$9(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3219)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5176)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5479)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5526)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5593)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5541)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5620)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:423)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:416)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1326)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1319)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2018-05-06 19:04:27,074 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.FreshRunReq
+2018-05-06 19:04:27,074 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.FreshRunReq
+2018-05-06 19:04:27,075 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.FreshRunReq
+2018-05-06 19:04:27,076 ERROR [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - An exception was thrown while waiting for `askLoadedTyped` during semantic highlighting.
+scala.tools.nsc.interactive.MissingResponse: response missing
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3(Global.scala:231)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$3$adapted(Global.scala:229)
+	at scala.collection.immutable.Set$Set1.foreach(Set.scala:95)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.$anonfun$checkNoOutstanding$2$adapted(Global.scala:229)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.checkNoOutstanding(Global.scala:229)
+	at scala.tools.nsc.interactive.Global.checkNoResponsesOutstanding(Global.scala:235)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:20)
+2018-05-06 19:04:27,274  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 19:04:27,274  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 19:04:27,275  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2018-05-06 19:04:27,277  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.

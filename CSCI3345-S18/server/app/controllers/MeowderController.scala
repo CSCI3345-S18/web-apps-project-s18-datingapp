@@ -25,6 +25,8 @@ import play.api.data.Forms._
 import scala.concurrent.Future
 import Console._
 
+
+
 //case class NewUser(username: String, password:String, sexuality:String, gender:String, catFact:String)
 case class NewUser(username: String, email: String, password:String)
 case class NewCat(catname:String, ownername:String, breed:String, gender:String)
@@ -32,6 +34,8 @@ case class Login(username: String, email:String, password:String)
 case class AgeCheck(month: Int, day:Int, year:Int)
 case class Profile(catFact: String)
 case class MatchUsers(userone: String, usertwo: String)
+
+
 
 @Singleton
 class MeowderController @Inject() (

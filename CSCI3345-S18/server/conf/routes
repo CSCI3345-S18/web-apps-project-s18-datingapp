@@ -96,7 +96,7 @@ GET		/updateMatch				controllers.MeowderController.updateMatch(userone: String, 
 
 GET		/addMatch					controllers.MeowderController.addMatch(userone: String, usertwo: String)
 
-GET		/chat						controllers.MeowderChatController.index
+GET		/chat						controllers.MeowderChatController.createChatPage
 GET		/chatsocket					controllers.MeowderChatController.socket
 
 
