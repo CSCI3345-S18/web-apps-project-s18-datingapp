@@ -10,7 +10,7 @@ import controllers.NewCat
 
 
 case class User(username: String, email:String, password:String, sexuality:Option[String], gender:Option[String], catFact:Option[String])
-case class Cat(catname:String, ownername:String, breed:String, gender:String)
+case class Cat(catname:String, ownername:String, owneremail: String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
 case class Chat(id: Int, sender: String, receiver:String, startDate: String)
 case class ChatMessage(id: Int, chatid: Int, message: String, dateTime: String)
@@ -26,9 +26,9 @@ object MeowderQueries {
     db.run(users.result)
   }
   
-  def allCats(catname: String, db: Database)(implicit ec: ExecutionContext):Future[Seq[Cat]] = {
+  def allCats(ownername: String, db: Database)(implicit ec: ExecutionContext):Future[Seq[Cat]] = {
     db.run{
-      val catlist = cats.filter(_.catname === catname).result
+      val catlist = cats.filter(_.ownername === ownername).result
       catlist
     }
   }
@@ -48,7 +48,7 @@ object MeowderQueries {
   
   def addCat(nc: NewCat, db: Database)(implicit ec:ExecutionContext): Future[Int] = {
     db.run {
-      cats += Cat(nc.catname, nc.ownername, nc.breed, nc.gender)
+      cats += Cat(nc.catname, nc.ownername, nc.owneremail, nc.breed, nc.gender)
     }
   }
   
@@ -84,9 +84,23 @@ object MeowderQueries {
     }
   }
   
-  def verify(email: String, password: String, db: Database)(implicit ex:ExecutionContext):Future[Option[User]] = {
+  def findCatInfoByEmail(email: String, db: Database)(implicit ex:ExecutionContext):Future[Seq[Cat]] = {
+    db.run {
+      cats.filter(u => u.owneremail === email).result
+    }
+  }
+  
+  def viewMatches(email: String, db: Database)(implicit ex:ExecutionContext): Future[Seq[Matched]] = {
+    db.run {
+      matches.filter(m => 
+        (m.userone === email && m.status === 1)||
+        (m.usertwo === email && m.status === 1)).result
+    }
+  }
+  
+  def verify(username: String, email: String, password: String, db: Database)(implicit ex:ExecutionContext):Future[Option[User]] = {
     db.run{
-      users.filter(u => u.email === email && u.password === password).result.headOption
+      users.filter(u => u.username === username && u.email === email && u.password === password).result.headOption
     }
   }
   
