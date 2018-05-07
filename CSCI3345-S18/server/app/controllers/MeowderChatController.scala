@@ -91,22 +91,28 @@ class MeowderChatController @Inject() (
   }
   */
   
-  def createChatPage(sender: String, receiver: String) = Action.async { implicit request =>
-    newChatForm.bindFromRequest().fold(
-        formWithErrors => {         
+  def addChat(sender: String, receiver: String) = Action.async { implicit request =>
+     newChatForm.bindFromRequest().fold(
+        formWithErrors => {        
+          Console.println("error")
           val Future = MeowderQueries.allChats(db)
           Future.map(messages => BadRequest(views.html.datingChat(sender, receiver, messages, formWithErrors)))
         },
         newMsg => {
           Console.println("creating chat page")
-          val msgFuture = MeowderQueries.allMessages(sender, receiver, db)
-          msgFuture.map { cnt =>
-            if(cnt.nonEmpty == true) Ok(views.html.datingChat(sender, receiver, cnt, newChatForm))
-            else Ok(views.html.datingChat(sender, receiver, cnt, newChatForm)).flashing("error" -> "Error creating msg")
+          val addFuture = MeowderQueries.addMessage(Option(sender), Option(receiver), Option(newMsg.message), db)
+          addFuture.map { add =>
+            if(add == 1)Redirect(routes.MeowderChatController.createChatPage(sender, receiver))
+            else Redirect(routes.MeowderChatController.createChatPage(sender, receiver))
           }
         })
   }
   
-  
-  
+  def createChatPage(sender: String, receiver: String) = Action.async { implicit request =>
+    val msgFuture = MeowderQueries.allMessages(sender, receiver, db)
+    msgFuture.map { cnt =>
+      if(cnt.nonEmpty == true) Ok(views.html.datingChat(sender, receiver, cnt, newChatForm))
+      else Ok(views.html.datingChat(sender, receiver, cnt, newChatForm)).flashing("error" -> "Error creating msg")
+    }
+  }
 }

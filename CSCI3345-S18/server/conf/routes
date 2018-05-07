@@ -101,13 +101,19 @@ GET		/updateMatch				controllers.MeowderController.updateMatch(userone: String, 
 GET		/addMatch					controllers.MeowderController.addMatch(userone: String, usertwo: String)
 
 
-GET		/chat						controllers.MeowderChatController.createChatPage(sender: String, receiver: String)
-POST	/chatmatch					controllers.MeowderChatController.createChatPage(sender: String, receiver: String)
-
-
 POST	/viewMatches				controllers.MeowderController.viewMatches(username: String, email: String)
-
 
 GET		/chatsocket					controllers.MeowderChatController.socket
 
+POST	/chat						controllers.MeowderChatController.createChatPage(sender: String, receiver: String)
+
+GET		/chat						controllers.MeowderChatController.createChatPage(sender: String, receiver: String)
+
+POST	/addchat					controllers.MeowderChatController.addChat(sender: String, receiver: String)
+
+POST	/viewMatches				controllers.MeowderController.viewMatches(username: String, email: String)
+
+		
+
+GET		/chatsocket					controllers.MeowderChatController.socket
 

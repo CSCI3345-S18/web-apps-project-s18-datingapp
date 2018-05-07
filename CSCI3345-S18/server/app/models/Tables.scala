@@ -46,16 +46,11 @@ object Tables {
   
   class Chats(tag: Tag) extends Table[Chat](tag, "chat") {
     def id = column[Int]("id")
-    def sender = column[String]("sender")
-    def receiver = column[String]("receiver")
-    def startDate = column[String]("startDate")
-    def message = column[String]("message")
+    def sender = column[Option[String]]("sender")
+    def receiver = column[Option[String]]("receiver")
+    def startDate = column[Option[String]]("startDate")
+    def message = column[Option[String]]("message")
     def * = (id, sender, receiver, startDate, message) <> (Chat.tupled, Chat.unapply)   
   }
   val chats = TableQuery[Chats]
-  
-
-  
-  
-  
 }

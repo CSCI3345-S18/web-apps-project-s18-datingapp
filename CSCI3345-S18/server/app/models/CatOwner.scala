@@ -6,14 +6,13 @@ import scala.concurrent.Future
 import controllers.NewChat
 import controllers.NewUser
 import controllers.NewCat
+import controllers.NewChat
 
 
 case class User(username: String, email:String, password:String, sexuality:Option[String], gender:Option[String], catFact:Option[String])
 case class Cat(catname:String, ownername:String, owneremail: String, breed:String, gender:String)
 case class Matched(userone:String, usertwo:String, status:Int)
-case class Chat(id: Int, sender: String, receiver:String, startDate: String, message: String)
-
-
+case class Chat(id: Int, sender: Option[String], receiver:Option[String], startDate: Option[String], message: Option[String])
 
 /**
  * Object that I can put some queries in.
@@ -115,7 +114,7 @@ object MeowderQueries {
     }
   }
   
-  def allChats(db: Database)(implicit ec: ExecutionContext): Future[Seq[Chat]] = {
+   def allChats(db: Database)(implicit ec: ExecutionContext): Future[Seq[Chat]] = {
     db.run(chats.result);
   }
   
@@ -125,9 +124,9 @@ object MeowderQueries {
     }
   }
   
-  def addMessage(nc: NewChat, db: Database)(implicit ex:ExecutionContext):Future[Int] = {
+  def addMessage(sender: Option[String], receiver: Option[String], message: Option[String], db: Database)(implicit ex:ExecutionContext):Future[Int] = {
     db.run {
-      chats += Chat(nc.id, nc.sender, nc.receiver, nc.startDate, nc.message)
+      chats += Chat(0, sender, receiver, null, message)
     }
   }
   
@@ -136,9 +135,4 @@ object MeowderQueries {
       chats.filter(c => c.sender === sender && c.receiver === receiver).result
     }
   }
-
-  
-  
-  
-  
 }
